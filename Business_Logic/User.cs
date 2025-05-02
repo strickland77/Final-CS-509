@@ -1,10 +1,10 @@
 abstract class User
 {
-    private string login;
-    private int pin;
-    private string name;
+    private readonly string login;
+    private readonly int pin;
+    private readonly string name;
     private double balance;
-    private int account_number;
+    private readonly int account_number;
 
     private string status;
 
