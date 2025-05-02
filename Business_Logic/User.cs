@@ -1,4 +1,25 @@
-abstract class User
+public interface IUser
+{
+    internal abstract void DisplayMenu();
+
+    protected void Exit();
+
+    internal int GetAccountNumber();
+
+    internal string GetAccountName();
+
+    internal double GetAccountBalance();
+
+    internal string GetAccountStatus();
+
+    internal string GetAccountLogin();
+
+    internal int GetAccountPin();
+
+    protected void SetAccountBalance(double input_balance);
+}
+
+abstract class User : IUser
 {
     private readonly string login;
     private readonly int pin;
@@ -18,45 +39,45 @@ abstract class User
         status = input_status;
     }
 
-    internal abstract void DisplayMenu();
+    public abstract void DisplayMenu();
 
-    protected void Exit()
+    public void Exit()
     {
         Console.WriteLine("Exiting ATM...");
         Environment.Exit(0);
     }
 
-    internal int GetAccountNumber()
+    public int GetAccountNumber()
     {
         return account_number;
     }
 
-    internal string GetAccountName()
+    public string GetAccountName()
     {
         return name;
     }
 
-    internal double GetAccountBalance()
+    public double GetAccountBalance()
     {
         return balance;
     }
 
-    internal string GetAccountStatus()
+    public string GetAccountStatus()
     {
         return status;
     }
 
-    internal string GetAccountLogin()
+    public string GetAccountLogin()
     {
         return login;
     }
 
-    internal int GetAccountPin()
+    public int GetAccountPin()
     {
         return pin;
     }
 
-    protected void SetAccountBalance(double input_balance)
+    public void SetAccountBalance(double input_balance)
     {
         this.balance = input_balance;
     }

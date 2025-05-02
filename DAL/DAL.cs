@@ -47,12 +47,6 @@ class DAL
                 Customer user = new Customer(db_login, db_pin, db_name, db_balance, db_account_number, db_status);
                 return user;
             }
-
-            Console.WriteLine(db_login);
-            Console.WriteLine(db_pin);
-            Console.WriteLine(db_name);
-            Console.WriteLine(db_balance);
-            Console.WriteLine(db_account_number);
         }
 
         Console.WriteLine("Found no account matching those credentials...");
