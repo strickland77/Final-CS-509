@@ -8,55 +8,55 @@ abstract class User
 
     private string status;
 
-    public User(string input_login, int input_pin, string input_name, double input_balance, int input_account_number, string input_status)
+    protected User(string input_login, int input_pin, string input_name, double input_balance, int input_account_number, string input_status)
     {
-        this.login = input_login;
-        this.pin = input_pin;
-        this.name = input_name;
-        this.balance = input_balance;
-        this.account_number = input_account_number;
-        this.status = input_status;
+        login = input_login;
+        pin = input_pin;
+        name = input_name;
+        balance = input_balance;
+        account_number = input_account_number;
+        status = input_status;
     }
 
-    public abstract void DisplayMenu();
+    internal abstract void DisplayMenu();
 
-    public void Exit()
+    protected void Exit()
     {
         Console.WriteLine("Exiting ATM...");
         Environment.Exit(0);
     }
 
-    public int GetAccountNumber()
+    internal int GetAccountNumber()
     {
-        return this.account_number;
+        return account_number;
     }
 
-    public string GetAccountName()
+    internal string GetAccountName()
     {
-        return this.name;
+        return name;
     }
 
-    public double GetAccountBalance()
+    internal double GetAccountBalance()
     {
-        return this.balance;
+        return balance;
     }
 
-    public string GetAccountStatus()
+    internal string GetAccountStatus()
     {
-        return this.status;
+        return status;
     }
 
-    public string GetAccountLogin()
+    internal string GetAccountLogin()
     {
-        return this.login;
+        return login;
     }
 
-    public int GetAccountPin()
+    internal int GetAccountPin()
     {
-        return this.pin;
+        return pin;
     }
 
-    public void SetAccountBalance(double input_balance)
+    protected void SetAccountBalance(double input_balance)
     {
         this.balance = input_balance;
     }

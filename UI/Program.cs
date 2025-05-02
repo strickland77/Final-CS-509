@@ -39,8 +39,6 @@ namespace ATM
             {
                 user.DisplayMenu();
             }
-        }
-
-        
+        } 
     }
 }
