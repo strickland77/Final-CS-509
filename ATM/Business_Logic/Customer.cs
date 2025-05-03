@@ -1,6 +1,7 @@
 using System.Data;
+using System.Diagnostics.CodeAnalysis;
 namespace ATM;
-
+[ExcludeFromCodeCoverage]
 class Customer : User
 {
     internal Customer(string input_login, int input_pin, string input_name, double input_balance, int input_account_number, string input_status) :
