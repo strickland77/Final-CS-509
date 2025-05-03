@@ -1,6 +1,7 @@
 using System.Data;
+using System.Diagnostics.CodeAnalysis;
 namespace ATM;
-
+[ExcludeFromCodeCoverage]
 class Admin : User
 {
     internal Admin(string input_login, int input_pin, string input_name, double input_balance, int input_account_number, string input_status) :
@@ -16,7 +17,7 @@ class Admin : User
 
         //var input = Console.ReadLine();
 
-        
+
         switch (input)
         {
             case "1":

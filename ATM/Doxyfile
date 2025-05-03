@@ -615,7 +615,7 @@ HIDE_UNDOC_CLASSES     = NO
 # option has no effect if EXTRACT_ALL is enabled.
 # The default value is: YES.
 
-HIDE_UNDOC_NAMESPACES  = YES
+#HIDE_UNDOC_NAMESPACES  = YES
 
 # If the HIDE_FRIEND_COMPOUNDS tag is set to YES, Doxygen will hide all friend
 # declarations. If set to NO, these declarations will be included in the
@@ -933,7 +933,7 @@ WARN_IF_UNDOC_ENUM_VAL = NO
 # will be suppressed.
 # The default value is: YES.
 
-WARN_LAYOUT_FILE       = YES
+#WARN_LAYOUT_FILE       = YES
 
 # If the WARN_AS_ERROR tag is set to YES then Doxygen will immediately stop when
 # a warning is encountered. If the WARN_AS_ERROR tag is set to FAIL_ON_WARNINGS
@@ -1216,7 +1216,7 @@ USE_MDFILE_AS_MAINPAGE =
 # command in order to be used as directory documentation.
 # The default value is: YES.
 
-IMPLICIT_DIR_DOCS      = YES
+#IMPLICIT_DIR_DOCS      = YES
 
 # The Fortran standard specifies that for fixed formatted Fortran code all
 # characters from position 72 are to be considered as comment. A common
@@ -2899,7 +2899,7 @@ PLANTUML_INCLUDE_PATH  =
 # contain PlantUml files that are included in the documentation (see the
 # \plantumlfile command).
 
-PLANTUMLFILE_DIRS      =
+#PLANTUMLFILE_DIRS      =
 
 # The DOT_GRAPH_MAX_NODES tag can be used to set the maximum number of nodes
 # that will be shown in the graph. If the number of nodes in a graph becomes
