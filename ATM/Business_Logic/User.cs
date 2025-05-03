@@ -3,7 +3,7 @@ namespace ATM;
 
 public interface IUser
 {
-    internal abstract void DisplayMenu();
+    internal abstract string DisplayMenu(string input);
 
     protected void Exit();
 
@@ -41,7 +41,7 @@ abstract class User : IUser
         status = input_status;
     }
 
-    public abstract void DisplayMenu();
+    public abstract string DisplayMenu(string input);
 
     public void Exit()
     {

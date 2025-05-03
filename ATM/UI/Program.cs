@@ -37,7 +37,9 @@ namespace ATM
 
             while (true)
             {
-                user.DisplayMenu();
+                IUserInput userInput = new Input();
+                var input = UI.HandleInput(userInput);
+                user.DisplayMenu(input);
             }
         } 
     }

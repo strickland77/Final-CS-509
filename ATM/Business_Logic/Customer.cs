@@ -6,14 +6,13 @@ class Customer : User
     internal Customer(string input_login, int input_pin, string input_name, double input_balance, int input_account_number, string input_status) :
     base(input_login, input_pin, input_name, input_balance, input_account_number, input_status)
     { }
-    public override void DisplayMenu()
+    public override string DisplayMenu(string input)
     {
         Console.WriteLine("1----Withdraw Cash");
         Console.WriteLine("2----Deposit Cash");
         Console.WriteLine("3----Display Balance");
         Console.WriteLine("4----Exit");
 
-        var input = Console.ReadLine();
         switch (input)
         {
             case "1":
@@ -32,6 +31,8 @@ class Customer : User
                 Console.WriteLine("Invalid input...");
                 break;
         }
+
+        return input;
     }
 
     private void WithdrawCash()

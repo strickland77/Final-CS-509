@@ -6,15 +6,17 @@ class Admin : User
     internal Admin(string input_login, int input_pin, string input_name, double input_balance, int input_account_number, string input_status) :
     base(input_login, input_pin, input_name, input_balance, input_account_number, input_status)
     { }
-    public override void DisplayMenu()
+    public override string DisplayMenu(string input)
     {
-        Console.WriteLine("1----Create New Account");
-        Console.WriteLine("2----Delete Existing Account");
-        Console.WriteLine("3----Update Account Information");
-        Console.WriteLine("4----Search for Account");
-        Console.WriteLine("5----Exit");
+        //Console.WriteLine("1----Create New Account");
+        //Console.WriteLine("2----Delete Existing Account");
+        //Console.WriteLine("3----Update Account Information");
+        //Console.WriteLine("4----Search for Account");
+        //Console.WriteLine("5----Exit");
 
-        var input = Console.ReadLine();
+        //var input = Console.ReadLine();
+
+        
         switch (input)
         {
             case "1":
@@ -36,6 +38,8 @@ class Admin : User
                 Console.WriteLine("Invalid input...");
                 break;
         }
+
+        return input;
     }
 
     private void CreateAccount()
