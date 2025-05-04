@@ -1,7 +1,7 @@
 using System.Data;
 using System.Diagnostics.CodeAnalysis;
 namespace ATM;
-[ExcludeFromCodeCoverage]
+
 class Admin : User
 {
     internal Admin(string input_login, int input_pin, string input_name, double input_balance, int input_account_number, string input_status) :
@@ -43,6 +43,7 @@ class Admin : User
         return input;
     }
 
+    [ExcludeFromCodeCoverage]
     private void CreateAccount()
     {
         Console.Write("Input new account login: ");
@@ -88,6 +89,7 @@ class Admin : User
         }
     }
 
+    [ExcludeFromCodeCoverage]
     private void DeleteAccount()
     {
         Console.Write("Enter the account number to which you want to delete: ");
@@ -125,6 +127,7 @@ class Admin : User
         }
     }
 
+    [ExcludeFromCodeCoverage]
     private void UpdateAccount()
     {
         Console.Write("Enter the account number to which you want to update: ");
@@ -203,6 +206,7 @@ class Admin : User
         }
     }
 
+    [ExcludeFromCodeCoverage]
     private void SearchAccount()
     {
         Console.Write("Enter the account number to which you want to search: ");
@@ -224,11 +228,13 @@ class Admin : User
         }
     }
 
+    [ExcludeFromCodeCoverage]
     private User RetrieveAccountByLogin(string login, int pin)
     {
         return DAL.Login(login, pin);
     }
 
+    [ExcludeFromCodeCoverage]
     private User RetrieveAccountByNumber(int account_number)
     {
         var conn = DAL.Connect();

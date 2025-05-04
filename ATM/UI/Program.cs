@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Data;
-using MySql;
+﻿using System.Diagnostics.CodeAnalysis;
+
 
 namespace ATM
 {
     class Program
     {
+        [ExcludeFromCodeCoverage]
         private static void Main()
         {
             Console.WriteLine("Welcome to the ATM");
@@ -41,6 +39,6 @@ namespace ATM
                 var input = UI.HandleInput(userInput);
                 user.DisplayMenu(input);
             }
-        } 
+        }
     }
 }

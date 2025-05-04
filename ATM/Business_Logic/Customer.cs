@@ -36,6 +36,7 @@ class Customer : User
         return input;
     }
 
+    [ExcludeFromCodeCoverage]
     private void WithdrawCash()
     {
         Console.Write("Enter the amount you would like to withdraw: ");
@@ -70,6 +71,7 @@ class Customer : User
         }
     }
 
+    [ExcludeFromCodeCoverage]
     private void DepositCash()
     {
         Console.Write("Enter the amount you would like to deposit: ");
@@ -95,6 +97,7 @@ class Customer : User
         Console.WriteLine("Balance:   " + GetAccountBalance());
     }
 
+    [ExcludeFromCodeCoverage]
     private void DisplayBalance()
     {
         Console.WriteLine("Account #  " + GetAccountNumber());
