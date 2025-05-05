@@ -1,4 +1,6 @@
 using System.Data;
+using System.Diagnostics.CodeAnalysis;
+
 
 class DAL : IDAL
 {
@@ -44,6 +46,19 @@ class DAL : IDAL
         cmd.Parameters.AddWithValue("@pin", pin);
 
         var reader = cmd.ExecuteReader();
+        var user = LoadUser(reader);
+
+        if (user == null)
+        {
+            Console.WriteLine("Found no account matching those credentials...");
+        }
+
+        return user;
+    }
+
+    [ExcludeFromCodeCoverage]
+    private User LoadUser(MySql.Data.MySqlClient.MySqlDataReader reader)
+    {
         while (reader.Read())
         {
             string db_login = reader["login"].ToString();
@@ -65,7 +80,6 @@ class DAL : IDAL
             }
         }
 
-        Console.WriteLine("Found no account matching those credentials...");
         return null;
     }
 }

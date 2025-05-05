@@ -25,12 +25,7 @@ public class UserTest
     public void test_get_account_number()
     {
         Fixture fixture = new Fixture();
-        string expectedLogin = fixture.Create<string>();
-        int expectedPin = fixture.Create<int>();
-        string expectedName = fixture.Create<string>();
-        double expectedBalance = fixture.Create<double>();
         int expectedAccountNumber = fixture.Create<int>();
-        string expectedStatus = fixture.Create<string>();
         
         var mock = new Mock<IUser>();
         mock.Setup(x => x.GetAccountNumber()).Returns(expectedAccountNumber);

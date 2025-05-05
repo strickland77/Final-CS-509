@@ -7,13 +7,21 @@ public class AllOtherTest
     [Fact]
     public void test_customer_displayMenu()
     {
-        var testInput = "0";
-        var mock = new Mock<IUser>();
-        IUser user = new Customer(mock.Object);
+        Fixture fixture = new Fixture();
+        
+        string login = fixture.Create<string>();
+        int pin = fixture.Create<int>();
+        string name = fixture.Create<string>();
+        double balance = fixture.Create<double>();
+        int accountNumber = fixture.Create<int>();
+        string status = fixture.Create<string>();
+
+        Customer user = new Customer(login, pin, name, balance, accountNumber, status);
 
         StringWriter sw = new StringWriter();
         Console.SetOut(sw);
 
+        var testInput = "0";
         var expectedOutput = user.DisplayMenu(testInput);
         Assert.Equal(expectedOutput, testInput);
 
@@ -34,13 +42,21 @@ public class AllOtherTest
     [Fact]
     public void test_admin_displayMenu()
     {
-        var testInput = "0";
-        var mock = new Mock<IUser>();
-        Admin user = new Admin(mock.Object);
+        Fixture fixture = new Fixture();
+
+        string login = fixture.Create<string>();
+        int pin = fixture.Create<int>();
+        string name = fixture.Create<string>();
+        double balance = fixture.Create<double>();
+        int accountNumber = fixture.Create<int>();
+        string status = fixture.Create<string>();
+
+        Admin user = new Admin(login, pin, name, balance, accountNumber, status);
 
         StringWriter sw = new StringWriter();
         Console.SetOut(sw);
 
+        var testInput = "0";
         var expectedOutput = user.DisplayMenu(testInput);
         Assert.Equal(expectedOutput, testInput);
 

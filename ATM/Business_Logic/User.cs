@@ -30,6 +30,7 @@ abstract class User : IUser
         status = user.GetAccountStatus();
     }
 
+    [ExcludeFromCodeCoverage]
     public void Exit()
     {
         Console.WriteLine("Exiting ATM...");
