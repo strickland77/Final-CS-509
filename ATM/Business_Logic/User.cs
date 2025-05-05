@@ -1,26 +1,5 @@
+using System.Diagnostics.CodeAnalysis;
 [assembly: System.Runtime.CompilerServices.InternalsVisibleTo("DynamicProxyGenAssembly2")]
-namespace ATM;
-
-public interface IUser
-{
-    internal abstract string DisplayMenu(string input);
-
-    protected void Exit();
-
-    internal int GetAccountNumber();
-
-    internal string GetAccountName();
-
-    internal double GetAccountBalance();
-
-    internal string GetAccountStatus();
-
-    internal string GetAccountLogin();
-
-    internal int GetAccountPin();
-
-    protected void SetAccountBalance(double input_balance);
-}
 
 abstract class User : IUser
 {
@@ -41,7 +20,15 @@ abstract class User : IUser
         status = input_status;
     }
 
-    public abstract string DisplayMenu(string input);
+    protected User(IUser user)
+    {
+        login = user.GetAccountLogin();
+        pin = user.GetAccountPin();
+        name = user.GetAccountName();
+        balance = user.GetAccountBalance();
+        account_number = user.GetAccountNumber();
+        status = user.GetAccountStatus();
+    }
 
     public void Exit()
     {
@@ -83,4 +70,9 @@ abstract class User : IUser
     {
         balance = input_balance;
     }
+
+    public abstract string DisplayMenu(string input);
+
+    [ExcludeFromCodeCoverage]
+    protected abstract string HandleMenuInput(string input);
 }

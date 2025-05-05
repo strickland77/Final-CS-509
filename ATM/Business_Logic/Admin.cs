@@ -1,23 +1,29 @@
 using System.Data;
 using System.Diagnostics.CodeAnalysis;
-namespace ATM;
 
 class Admin : User
 {
+    IDAL dal = new DAL();
+
     internal Admin(string input_login, int input_pin, string input_name, double input_balance, int input_account_number, string input_status) :
-    base(input_login, input_pin, input_name, input_balance, input_account_number, input_status)
-    { }
-    public override string DisplayMenu(string input)
+    base(input_login, input_pin, input_name, input_balance, input_account_number, input_status){}
+
+    internal Admin(IUser user) : base(user){}
+
+    override public string DisplayMenu(string input)
     {
-        //Console.WriteLine("1----Create New Account");
-        //Console.WriteLine("2----Delete Existing Account");
-        //Console.WriteLine("3----Update Account Information");
-        //Console.WriteLine("4----Search for Account");
-        //Console.WriteLine("5----Exit");
+        Console.WriteLine("1----Create New Account");
+        Console.WriteLine("2----Delete Existing Account");
+        Console.WriteLine("3----Update Account Information");
+        Console.WriteLine("4----Search for Account");
+        Console.WriteLine("5----Exit");
 
-        //var input = Console.ReadLine();
+        return HandleMenuInput(input);
+    }
 
-
+    [ExcludeFromCodeCoverage]
+    override protected string HandleMenuInput(string input)
+    {
         switch (input)
         {
             case "1":
@@ -63,7 +69,7 @@ class Admin : User
         }
         else
         {
-            var conn = DAL.Connect();
+            var conn = DBHandling.ConnectHandling(dal);
 
             var cmd = new MySql.Data.MySqlClient.MySqlCommand();
             cmd.Connection = conn;
@@ -108,7 +114,7 @@ class Admin : User
 
             if (confirmed_account_number == input_account_number)
             {
-                var conn = DAL.Connect();
+                var conn = DBHandling.ConnectHandling(dal);
 
                 var cmd = new MySql.Data.MySqlClient.MySqlCommand();
                 cmd.Connection = conn;
@@ -151,7 +157,7 @@ class Admin : User
 
             var input = Console.ReadLine();
 
-            var conn = DAL.Connect();
+            var conn = DBHandling.ConnectHandling(dal);
 
             var cmd = new MySql.Data.MySqlClient.MySqlCommand();
             cmd.Connection = conn;
@@ -231,13 +237,13 @@ class Admin : User
     [ExcludeFromCodeCoverage]
     private User RetrieveAccountByLogin(string login, int pin)
     {
-        return DAL.Login(login, pin);
+        return DBHandling.LoginHandling(dal, login, pin);
     }
 
     [ExcludeFromCodeCoverage]
     private User RetrieveAccountByNumber(int account_number)
     {
-        var conn = DAL.Connect();
+        var conn = DBHandling.ConnectHandling(dal);
 
         var cmd = new MySql.Data.MySqlClient.MySqlCommand();
         cmd.Connection = conn;
@@ -265,12 +271,6 @@ class Admin : User
                 Customer user = new Customer(db_login, db_pin, db_name, db_balance, db_account_number, db_status);
                 return user;
             }
-
-            Console.WriteLine(db_login);
-            Console.WriteLine(db_pin);
-            Console.WriteLine(db_name);
-            Console.WriteLine(db_balance);
-            Console.WriteLine(db_account_number);
         }
 
         Console.WriteLine("Found no account matching those credentials...");

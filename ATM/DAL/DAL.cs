@@ -1,9 +1,8 @@
 using System.Data;
-namespace ATM;
 
-class DAL
+class DAL : IDAL
 {
-    internal static MySql.Data.MySqlClient.MySqlConnection Connect()
+    public MySql.Data.MySqlClient.MySqlConnection Connect()
     {
         MySql.Data.MySqlClient.MySqlConnection conn;
         string myConnectionString;
@@ -12,14 +11,30 @@ class DAL
 
         conn = new MySql.Data.MySqlClient.MySqlConnection();
         conn.ConnectionString = myConnectionString;
+
+        try
+        {
+            conn.Open();
+        }
+        catch
+        {
+            Console.WriteLine("Unable to connect to database...");
+            return null;
+        }
         conn.Open();
 
         return conn;
     }
 
-    internal static User Login(string login, int pin)
+    public User Login(string login, int pin)
     {
         var conn = Connect();
+
+        if (conn == null)
+        {
+            Console.WriteLine("Login failed...");
+            return null;
+        }
 
         var cmd = new MySql.Data.MySqlClient.MySqlCommand();
         cmd.Connection = conn;

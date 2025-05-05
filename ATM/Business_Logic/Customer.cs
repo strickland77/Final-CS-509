@@ -1,19 +1,28 @@
 using System.Data;
 using System.Diagnostics.CodeAnalysis;
-namespace ATM;
-[ExcludeFromCodeCoverage]
+
 class Customer : User
 {
+    IDAL dal = new DAL();
+
     internal Customer(string input_login, int input_pin, string input_name, double input_balance, int input_account_number, string input_status) :
-    base(input_login, input_pin, input_name, input_balance, input_account_number, input_status)
-    { }
-    public override string DisplayMenu(string input)
+    base(input_login, input_pin, input_name, input_balance, input_account_number, input_status){}
+
+    internal Customer(IUser user) : base(user){}
+
+    override public string DisplayMenu(string input)
     {
         Console.WriteLine("1----Withdraw Cash");
         Console.WriteLine("2----Deposit Cash");
         Console.WriteLine("3----Display Balance");
         Console.WriteLine("4----Exit");
 
+        return HandleMenuInput(input);
+    }
+
+    [ExcludeFromCodeCoverage]
+    override protected string HandleMenuInput(string input)
+    {
         switch (input)
         {
             case "1":
@@ -45,7 +54,7 @@ class Customer : User
         if (GetAccountBalance() - withdraw_amount >= 0)
         {
 
-            var conn = DAL.Connect();
+            var conn = DBHandling.ConnectHandling(dal);
 
             var cmd = new MySql.Data.MySqlClient.MySqlCommand();
             cmd.Connection = conn;
@@ -77,7 +86,7 @@ class Customer : User
         Console.Write("Enter the amount you would like to deposit: ");
         var deposit_amount = Convert.ToDouble(Console.ReadLine());
 
-        var conn = DAL.Connect();
+        var conn = DBHandling.ConnectHandling(dal);
 
         var cmd = new MySql.Data.MySqlClient.MySqlCommand();
         cmd.Connection = conn;
