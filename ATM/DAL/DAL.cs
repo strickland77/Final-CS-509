@@ -40,12 +40,7 @@ class DAL : IDAL
         }
         else
         {
-            var user = LoadUser(conn, login, pin);
-            if (user == null)
-            {
-                Console.WriteLine("Found no account matching those credentials...");
-            }
-            return user;
+            return LoadUser(conn, login, pin);
         }
     }
 
@@ -81,6 +76,7 @@ class DAL : IDAL
             }
         }
 
+        Console.WriteLine("Found no account matching those credentials...");
         return null;
     }
 }
