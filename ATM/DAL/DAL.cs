@@ -1,5 +1,6 @@
 using System.Data;
 using System.Diagnostics.CodeAnalysis;
+using System.Runtime.InteropServices;
 
 
 class DAL : IDAL
@@ -37,7 +38,20 @@ class DAL : IDAL
             Console.WriteLine("Login failed...");
             return null;
         }
+        else
+        {
+            var user = LoadUser(conn, login, pin);
+            if (user == null)
+            {
+                Console.WriteLine("Found no account matching those credentials...");
+            }
+            return user;
+        }
+    }
 
+    [ExcludeFromCodeCoverage]
+    private User LoadUser(MySql.Data.MySqlClient.MySqlConnection conn, string login, int pin)
+    {
         var cmd = new MySql.Data.MySqlClient.MySqlCommand();
         cmd.Connection = conn;
         cmd.CommandType = CommandType.Text;
@@ -46,19 +60,6 @@ class DAL : IDAL
         cmd.Parameters.AddWithValue("@pin", pin);
 
         var reader = cmd.ExecuteReader();
-        var user = LoadUser(reader);
-
-        if (user == null)
-        {
-            Console.WriteLine("Found no account matching those credentials...");
-        }
-
-        return user;
-    }
-
-    [ExcludeFromCodeCoverage]
-    private User LoadUser(MySql.Data.MySqlClient.MySqlDataReader reader)
-    {
         while (reader.Read())
         {
             string db_login = reader["login"].ToString();
