@@ -1,4 +1,7 @@
-public interface IUser
+/// <summary>
+/// User interface defining core required functionality for a User.
+/// </summary>
+interface IUser
 {
     protected void Exit();
 

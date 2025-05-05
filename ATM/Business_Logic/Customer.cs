@@ -1,6 +1,9 @@
 using System.Data;
 using System.Diagnostics.CodeAnalysis;
 
+/// <summary>
+/// Customer class inheriting from user with extra functionality.
+/// </summary>
 class Customer : User
 {
     IDAL dal = new DAL();
@@ -10,6 +13,15 @@ class Customer : User
 
     internal Customer(IUser user) : base(user){}
 
+    /// <summary>
+    /// Displays the menu for a Customer and handles the user input to select an action.
+    /// </summary>
+    /// <param name="input">
+    /// String number to select an action from the menu.
+    /// </param>
+    /// <returns>
+    /// String that was input.
+    /// </returns>
     override public string DisplayMenu(string input)
     {
         Console.WriteLine("1----Withdraw Cash");

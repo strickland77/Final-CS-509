@@ -1,5 +1,8 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 
+/// <summary>
+/// Program class for executing the Main function for the program.
+/// </summary>
 class Program
 {
     [ExcludeFromCodeCoverage]

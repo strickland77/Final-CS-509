@@ -1,15 +1,28 @@
 using System.Data;
 using System.Diagnostics.CodeAnalysis;
 
+/// <summary>
+/// Admin class inheriting from user with extra functionality.
+/// </summary>
 class Admin : User
 {
     IDAL dal = new DAL();
 
     internal Admin(string input_login, int input_pin, string input_name, double input_balance, int input_account_number, string input_status) :
-    base(input_login, input_pin, input_name, input_balance, input_account_number, input_status){}
+    base(input_login, input_pin, input_name, input_balance, input_account_number, input_status)
+    { }
 
-    internal Admin(IUser user) : base(user){}
+    internal Admin(IUser user) : base(user) { }
 
+    /// <summary>
+    /// Displays the menu for an Admin and handles the user input to select an action.
+    /// </summary>
+    /// <param name="input">
+    /// String number to select an action from the menu.
+    /// </param>
+    /// <returns>
+    /// String that was input.
+    /// </returns>
     override public string DisplayMenu(string input)
     {
         Console.WriteLine("1----Create New Account");

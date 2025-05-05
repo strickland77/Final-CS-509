@@ -2,9 +2,17 @@ using System.Data;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.InteropServices;
 
-
+/// <summary>
+/// DAL (Data Abstraction Layer) class to hand direct interaction with the database.
+/// </summary>
 class DAL : IDAL
 {
+    /// <summary>
+    /// Connects to the SQL database for the ATM.
+    /// </summary>
+    /// <returns>
+    /// MySql.Data.MySqlClient.MySqlConnection for the created connection or null if the connection failed.
+    /// </returns>
     public MySql.Data.MySqlClient.MySqlConnection Connect()
     {
         MySql.Data.MySqlClient.MySqlConnection conn;
@@ -29,6 +37,18 @@ class DAL : IDAL
         return conn;
     }
 
+    /// <summary>
+    /// Logs in a user to the database.
+    /// </summary>
+    /// <param name="login">
+    /// String login for the user attempting access.
+    /// </param>
+    /// <param name="pin">
+    /// Int pin for the user attempting access.
+    /// </param>
+    /// <returns>
+    /// User if found or null if the login failed.
+    /// </returns>
     public User Login(string login, int pin)
     {
         var conn = Connect();

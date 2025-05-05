@@ -1,0 +1,87 @@
+\doxysection{Customer Class Reference}
+\hypertarget{class_customer}{}\label{class_customer}\index{Customer@{Customer}}
+
+
+\doxylink{class_customer}{Customer} class inheriting from user with extra functionality.  
+
+
+Inheritance diagram for Customer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_customer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override string \mbox{\hyperlink{class_customer_af4899c68acf54bc3bacd0969f4c031a6}{Display\+Menu}} (string input)
+\begin{DoxyCompactList}\small\item\em Displays the menu for a \doxylink{class_customer}{Customer} and handles the user input to select an action. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_user}{User}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_user_af8ba25ce4099779b3faec51b926a0872}{Exit}} ()
+\begin{DoxyCompactList}\small\item\em Exits the application. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_user_a71006b6c22ad0678d3acc888225d587e}{Get\+Account\+Number}} ()
+\begin{DoxyCompactList}\small\item\em Gets the account number for this user. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_user_a91b9b6ed16d8d749b79db4a7014a0989}{Get\+Account\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Gets the account name for this user. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_user_aca60e3a8088164b144b0fba9f1b35c13}{Get\+Account\+Balance}} ()
+\begin{DoxyCompactList}\small\item\em Gets the account balance for this user. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_user_afe8d7eab695bef2b89435ebd43343321}{Get\+Account\+Status}} ()
+\begin{DoxyCompactList}\small\item\em Gets the account status for this user. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_user_a97504605454ddf0962b72b9a12da2639}{Get\+Account\+Login}} ()
+\begin{DoxyCompactList}\small\item\em Gets the account login for this user. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_user_a29e3b83031576ccccfbff563b6df35ac}{Get\+Account\+Pin}} ()
+\begin{DoxyCompactList}\small\item\em Gets the account pin for this user. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_user_a8575d33e8a462cf6fcd99a85b5a04bb7}{Set\+Account\+Balance}} (double input\+\_\+balance)
+\begin{DoxyCompactList}\small\item\em Sets the account balance for this user. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_user_ace9ea0e5af14e69dedcefcd5f7453f12}{Display\+Menu}} (string input)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_customer_a23e54b142bb46100a03aa261a5b81409}\label{class_customer_a23e54b142bb46100a03aa261a5b81409} 
+override string {\bfseries Handle\+Menu\+Input} (string input)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_user}{User}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries User} (string input\+\_\+login, int input\+\_\+pin, string input\+\_\+name, double input\+\_\+balance, int input\+\_\+account\+\_\+number, string input\+\_\+status)
+\item 
+{\bfseries User} (\mbox{\hyperlink{interface_i_user}{IUser}} user)
+\item 
+string \mbox{\hyperlink{class_user_aa03749ee4ad36ce53b0c5f806bb662a2}{Handle\+Menu\+Input}} (string input)
+\begin{DoxyCompactList}\small\item\em Displays the menu for a user and handles the user input to select an action. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_customer}{Customer} class inheriting from user with extra functionality. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_customer_af4899c68acf54bc3bacd0969f4c031a6}\index{Customer@{Customer}!DisplayMenu@{DisplayMenu}}
+\index{DisplayMenu@{DisplayMenu}!Customer@{Customer}}
+\doxysubsubsection{\texorpdfstring{DisplayMenu()}{DisplayMenu()}}
+{\footnotesize\ttfamily \label{class_customer_af4899c68acf54bc3bacd0969f4c031a6} 
+override string Customer.\+Display\+Menu (\begin{DoxyParamCaption}\item[{string}]{input}{}\end{DoxyParamCaption})}
+
+
+
+Displays the menu for a \doxylink{class_customer}{Customer} and handles the user input to select an action. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & String number to select an action from the menu. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String that was input. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_user}{IUser}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ATM/\+Business\+\_\+\+Logic/Customer.\+cs\end{DoxyCompactItemize}

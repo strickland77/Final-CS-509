@@ -1,0 +1,65 @@
+\doxysection{DBHandling Class Reference}
+\hypertarget{class_d_b_handling}{}\label{class_d_b_handling}\index{DBHandling@{DBHandling}}
+
+
+\doxylink{class_d_b_handling}{DBHandling} class for the rest of the program to interace with the database.  
+
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static My\+Sql.\+Data.\+My\+Sql\+Client.\+My\+Sql\+Connection \mbox{\hyperlink{class_d_b_handling_a05e6388ebb6f72567efd38c2008f78b3}{Connect\+Handling}} (\mbox{\hyperlink{interface_i_d_a_l}{IDAL}} dal)
+\begin{DoxyCompactList}\small\item\em Handles connecting by executing connect for the provided \doxylink{class_d_a_l}{DAL}. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_user}{User}} \mbox{\hyperlink{class_d_b_handling_a346570d47b92de2e3c3ec8a606bc7e41}{Login\+Handling}} (\mbox{\hyperlink{interface_i_d_a_l}{IDAL}} dal, string login, int pin)
+\begin{DoxyCompactList}\small\item\em Handles logging in a user to the database. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_d_b_handling}{DBHandling} class for the rest of the program to interace with the database. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_d_b_handling_a05e6388ebb6f72567efd38c2008f78b3}\index{DBHandling@{DBHandling}!ConnectHandling@{ConnectHandling}}
+\index{ConnectHandling@{ConnectHandling}!DBHandling@{DBHandling}}
+\doxysubsubsection{\texorpdfstring{ConnectHandling()}{ConnectHandling()}}
+{\footnotesize\ttfamily \label{class_d_b_handling_a05e6388ebb6f72567efd38c2008f78b3} 
+static My\+Sql.\+Data.\+My\+Sql\+Client.\+My\+Sql\+Connection DBHandling.\+Connect\+Handling (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_i_d_a_l}{IDAL}}}]{dal}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Handles connecting by executing connect for the provided \doxylink{class_d_a_l}{DAL}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dal} & \doxylink{interface_i_d_a_l}{IDAL} to attempt a connection with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+My\+Sql.\+Data.\+My\+Sql\+Client.\+My\+Sql\+Connection if the connect was successful or null if it failed. 
+\end{DoxyReturn}
+\Hypertarget{class_d_b_handling_a346570d47b92de2e3c3ec8a606bc7e41}\index{DBHandling@{DBHandling}!LoginHandling@{LoginHandling}}
+\index{LoginHandling@{LoginHandling}!DBHandling@{DBHandling}}
+\doxysubsubsection{\texorpdfstring{LoginHandling()}{LoginHandling()}}
+{\footnotesize\ttfamily \label{class_d_b_handling_a346570d47b92de2e3c3ec8a606bc7e41} 
+static \mbox{\hyperlink{class_user}{User}} DBHandling.\+Login\+Handling (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_i_d_a_l}{IDAL}}}]{dal}{, }\item[{string}]{login}{, }\item[{int}]{pin}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Handles logging in a user to the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dal} & \doxylink{interface_i_d_a_l}{IDAL} to attempt a connection with. \\
+\hline
+{\em login} & String login for the user attempting access. \\
+\hline
+{\em pin} & Int pin for the user attempting access. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_user}{User} if the login was successful or null if it failed. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ATM/\+DAL/DBHandling.\+cs\end{DoxyCompactItemize}

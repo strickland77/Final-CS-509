@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.3)  3 MAY 2025 02:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.3)  4 MAY 2025 23:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -828,20 +828,78 @@ ts/enc/dvips/base/8r.enc}]
 \openout6 = `refman.toc'.
 
 Package hyperref Info: Option `pageanchor' set `true' on input line 233.
- (md__r_e_a_d_m_e.tex
+
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 18.66588pt on input line 1.
+(Font)              scaled to size 18.66588pt on input line 235.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 18.66588pt on input line 1.
+(Font)              scaled to size 18.66588pt on input line 235.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 22.39185pt on input line 1.
+(Font)              scaled to size 22.39185pt on input line 235.
+(hierarchy.tex
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 12.9599pt on input line 1.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 6.29996pt on input line 2.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
+ (C:\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
+
+(C:\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 2.
+
+ (C:\MiKTeX\tex/latex/wasysym\uwasy.fd
+File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
+)
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 8.99994pt on input line 3.
+
+
+LaTeX Warning: Reference `class_d_b_handling' on page 1 undefined on input line
+ 3.
+
+
+LaTeX Warning: Reference `interface_i_d_a_l' on page 1 undefined on input line 
+4.
+
+
+LaTeX Warning: Reference `class_d_a_l' on page 1 undefined on input line 6.
+
+
+LaTeX Warning: Reference `interface_i_user' on page 1 undefined on input line 8
+.
+
+
+LaTeX Warning: Reference `class_user' on page 1 undefined on input line 10.
+
+
+LaTeX Warning: Reference `class_admin' on page 1 undefined on input line 12.
+
+
+LaTeX Warning: Reference `class_customer' on page 1 undefined on input line 13.
+
+
+
+LaTeX Warning: Reference `interface_i_user_input' on page 1 undefined on input 
+line 16.
+
+
+LaTeX Warning: Reference `class_input' on page 1 undefined on input line 18.
+
+
+LaTeX Warning: Reference `class_program' on page 1 undefined on input line 20.
+
+
+LaTeX Warning: Reference `class_u_i' on page 1 undefined on input line 21.
+
 )
 
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 8.99994pt on input line 238.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 6.29996pt on input line 238.
+(Font)              scaled to size 6.29996pt on input line 237.
 [1
 
 
@@ -850,12 +908,454 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 [2
 
 ]
+Chapter 2.
+(annotated.tex
+
+LaTeX Warning: Reference `class_admin' on page 3 undefined on input line 3.
+
+
+LaTeX Warning: Reference `class_customer' on page 3 undefined on input line 4.
+
+
+LaTeX Warning: Reference `class_d_a_l' on page 3 undefined on input line 5.
+
+
+LaTeX Warning: Reference `class_d_b_handling' on page 3 undefined on input line
+ 6.
+
+
+LaTeX Warning: Reference `interface_i_d_a_l' on page 3 undefined on input line 
+7.
+
+
+LaTeX Warning: Reference `class_input' on page 3 undefined on input line 8.
+
+
+LaTeX Warning: Reference `interface_i_user' on page 3 undefined on input line 9
+.
+
+
+LaTeX Warning: Reference `interface_i_user_input' on page 3 undefined on input 
+line 10.
+
+
+LaTeX Warning: Reference `class_program' on page 3 undefined on input line 11.
+
+
+LaTeX Warning: Reference `class_u_i' on page 3 undefined on input line 12.
+
+
+LaTeX Warning: Reference `class_user' on page 3 undefined on input line 13.
+
+)
+
+[3]
+
+[4
+
+]
+Chapter 3.
+(class_admin.tex
+Package epstopdf Info: Source file: <class_admin.eps>
+(epstopdf)                    date: 2025-05-04 23:16:05
+(epstopdf)                    size: 3862 bytes
+(epstopdf)             Output file: <class_admin-eps-converted-to.pdf>
+(epstopdf)             Command: <miktex-epstopdf --outfile=class_admin-eps-conv
+erted-to.pdf class_admin.eps>
+(epstopdf)             \includegraphics on input line 11.
+runsystem(miktex-epstopdf --outfile=class_admin-eps-converted-to.pdf class_admi
+n.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <class_admin-eps-converted-to.pdf>.
+
+
+! Package pdftex.def Error: File `class_admin-eps-converted-to.pdf' not found: 
+using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 ...degraphics[height=3.000000cm]{class_admin}
+                                                  
+? 
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 11
+.
+(C:\MiKTeX\tex/latex/psnfss\t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 1
+7.
+ (C:\MiKTeX\tex/latex/psnfss\ts1phv.fd
+File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
+)
+LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 17.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 8.09995pt on input line 18.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 18.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 8.09995pt on input line 18.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 10.79993pt on input line 19.
+
+
+[5]
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 7.19995pt on input line 64.
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 65.
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 3.1 on input line 75.
+
+
+Underfull \hbox (badness 10000) detected at line 76
+[][][]
+ []
+
+) (class_customer.tex
+Package epstopdf Info: Source file: <class_customer.eps>
+(epstopdf)                    date: 2025-05-04 23:16:06
+(epstopdf)                    size: 3867 bytes
+(epstopdf)             Output file: <class_customer-eps-converted-to.pdf>
+(epstopdf)             Command: <miktex-epstopdf --outfile=class_customer-eps-c
+onverted-to.pdf class_customer.eps>
+(epstopdf)             \includegraphics on input line 11.
+runsystem(miktex-epstopdf --outfile=class_customer-eps-converted-to.pdf class_c
+ustomer.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <class_customer-eps-converted-to.pdf>.
+
+
+! Package pdftex.def Error: File `class_customer-eps-converted-to.pdf' not foun
+d: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 ...raphics[height=3.000000cm]{class_customer}
+                                                  
+? 
+
+
+[6]
+
+[7]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 3.2 on input line 75.
+
+
+Underfull \hbox (badness 10000) detected at line 76
+[][][]
+ []
+
+) (class_d_a_l.tex
+Package epstopdf Info: Source file: <class_d_a_l.eps>
+(epstopdf)                    date: 2025-05-04 23:16:06
+(epstopdf)                    size: 3756 bytes
+(epstopdf)             Output file: <class_d_a_l-eps-converted-to.pdf>
+(epstopdf)             Command: <miktex-epstopdf --outfile=class_d_a_l-eps-conv
+erted-to.pdf class_d_a_l.eps>
+(epstopdf)             \includegraphics on input line 11.
+runsystem(miktex-epstopdf --outfile=class_d_a_l-eps-converted-to.pdf class_d_a_
+l.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <class_d_a_l-eps-converted-to.pdf>.
+
+
+! Package pdftex.def Error: File `class_d_a_l-eps-converted-to.pdf' not found: 
+using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 ...degraphics[height=2.000000cm]{class_d_a_l}
+                                                  
+? 
+
+Underfull \hbox (badness 10000) detected at line 37
+[][][]
+ []
+
+
+
+[8]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 3.3 on input line 60.
+
+
+Underfull \hbox (badness 10000) detected at line 61
+[][][]
+ []
+
+) (class_d_b_handling.tex
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 3.4 on input line 35.
+
+
+Underfull \hbox (badness 10000) detected at line 36
+[][][]
+ []
+
+
+
+[9]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 3.5 on input line 57.
+
+
+Underfull \hbox (badness 10000) detected at line 58
+[][][]
+ []
+
+) (interface_i_d_a_l.tex
+Package epstopdf Info: Source file: <interface_i_d_a_l.eps>
+(epstopdf)                    date: 2025-05-04 23:16:06
+(epstopdf)                    size: 3756 bytes
+(epstopdf)             Output file: <interface_i_d_a_l-eps-converted-to.pdf>
+(epstopdf)             Command: <miktex-epstopdf --outfile=interface_i_d_a_l-ep
+s-converted-to.pdf interface_i_d_a_l.eps>
+(epstopdf)             \includegraphics on input line 11.
+runsystem(miktex-epstopdf --outfile=interface_i_d_a_l-eps-converted-to.pdf inte
+rface_i_d_a_l.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <interface_i_d_a_l-eps-converted-to.pdf>.
+
+
+! Package pdftex.def Error: File `interface_i_d_a_l-eps-converted-to.pdf' not f
+ound: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 ...hics[height=2.000000cm]{interface_i_d_a_l}
+                                                  
+? 
+
+Underfull \hbox (badness 10000) detected at line 37
+[][][]
+ []
+
+
+
+[10]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 3.6 on input line 60.
+
+
+Underfull \hbox (badness 10000) detected at line 61
+[][][]
+ []
+
+) (class_input.tex
+Package epstopdf Info: Source file: <class_input.eps>
+(epstopdf)                    date: 2025-05-04 23:16:07
+(epstopdf)                    size: 3772 bytes
+(epstopdf)             Output file: <class_input-eps-converted-to.pdf>
+(epstopdf)             Command: <miktex-epstopdf --outfile=class_input-eps-conv
+erted-to.pdf class_input.eps>
+(epstopdf)             \includegraphics on input line 11.
+runsystem(miktex-epstopdf --outfile=class_input-eps-converted-to.pdf class_inpu
+t.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <class_input-eps-converted-to.pdf>.
+
+
+! Package pdftex.def Error: File `class_input-eps-converted-to.pdf' not found: 
+using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 ...degraphics[height=2.000000cm]{class_input}
+                                                  
+? 
+
+Underfull \hbox (badness 10000) detected at line 35
+[][][]
+ []
+
+
+
+[11]) (interface_i_user.tex
+Package epstopdf Info: Source file: <interface_i_user.eps>
+(epstopdf)                    date: 2025-05-04 23:16:07
+(epstopdf)                    size: 3976 bytes
+(epstopdf)             Output file: <interface_i_user-eps-converted-to.pdf>
+(epstopdf)             Command: <miktex-epstopdf --outfile=interface_i_user-eps
+-converted-to.pdf interface_i_user.eps>
+(epstopdf)             \includegraphics on input line 11.
+runsystem(miktex-epstopdf --outfile=interface_i_user-eps-converted-to.pdf inter
+face_i_user.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <interface_i_user-eps-converted-to.pdf>.
+
+
+! Package pdftex.def Error: File `interface_i_user-eps-converted-to.pdf' not fo
+und: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 ...phics[height=3.000000cm]{interface_i_user}
+                                                  
+? 
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 41.
+) (interface_i_user_input.tex
+
+[12]
+Package epstopdf Info: Source file: <interface_i_user_input.eps>
+(epstopdf)                    date: 2025-05-04 23:16:08
+(epstopdf)                    size: 3772 bytes
+(epstopdf)             Output file: <interface_i_user_input-eps-converted-to.pd
+f>
+(epstopdf)             Command: <miktex-epstopdf --outfile=interface_i_user_inp
+ut-eps-converted-to.pdf interface_i_user_input.eps>
+(epstopdf)             \includegraphics on input line 11.
+runsystem(miktex-epstopdf --outfile=interface_i_user_input-eps-converted-to.pdf
+ interface_i_user_input.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <interface_i_user_input-eps-converted-to.pd
+f>.
+
+
+! Package pdftex.def Error: File `interface_i_user_input-eps-converted-to.pdf' 
+not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 ...height=2.000000cm]{interface_i_user_input}
+                                                  
+? 
+) (class_program.tex) (class_u_i.tex
+
+[13]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 3.7 on input line 35.
+
+
+Underfull \hbox (badness 10000) detected at line 36
+[][][]
+ []
+
+
+
+[14]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 3.8 on input line 55.
+
+
+Underfull \hbox (badness 10000) detected at line 56
+[][][]
+ []
+
+) (class_user.tex
+Package epstopdf Info: Source file: <class_user.eps>
+(epstopdf)                    date: 2025-05-04 23:16:08
+(epstopdf)                    size: 3976 bytes
+(epstopdf)             Output file: <class_user-eps-converted-to.pdf>
+(epstopdf)             Command: <miktex-epstopdf --outfile=class_user-eps-conve
+rted-to.pdf class_user.eps>
+(epstopdf)             \includegraphics on input line 11.
+runsystem(miktex-epstopdf --outfile=class_user-eps-converted-to.pdf class_user.
+eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <class_user-eps-converted-to.pdf>.
+
+
+! Package pdftex.def Error: File `class_user-eps-converted-to.pdf' not found: u
+sing draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 ...udegraphics[height=3.000000cm]{class_user}
+                                                  
+? 
+
+
+[15]
+Underfull \hbox (badness 10000) detected at line 86
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 103
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 120
+[][][]
+ []
+
+
+
+[16]
+Underfull \hbox (badness 10000) detected at line 137
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 154
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 171
+[][][]
+ []
+
+
+
+[17]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 3.9 on input line 192.
+
+
+Underfull \hbox (badness 10000) detected at line 193
+[][][]
+ []
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 3.10 on input line 210.
+
+)
+
+[18]
 No file refman.ind.
+
+Package longtable Warning: Table widths have changed. Rerun LaTeX.
+
 (refman.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-03-26>
  ***********
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
@@ -867,21 +1367,23 @@ Package rerunfilecheck Warning: File `refman.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `refman.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  B413284A01115E73F4CB27833147DA35;86.
+(rerunfilecheck)             After:  72DC79FD985B6732AE5A2DD22280B36B;12109.
  ) 
 Here is how much of TeX's memory you used:
- 17822 strings out of 469959
- 278729 string characters out of 5486670
- 691853 words of memory out of 5000000
- 44342 multiletter control sequences out of 15000+600000
- 649020 words of font info for 57 fonts, out of 8000000 for 9000
+ 18535 strings out of 469959
+ 294689 string characters out of 5486670
+ 706808 words of memory out of 5000000
+ 44843 multiletter control sequences out of 15000+600000
+ 675596 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 101i,11n,117p,329b,472s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/MiKTeX/fonts/type1/urw/hel
-vetic/uhvr8a.pfb>
-Output written on refman.pdf (4 pages, 20978 bytes).
+ 101i,15n,117p,459b,750s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/MiKTeX/fonts/type1/urw/cour
+ier/ucrro8a.pfb><C:/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/MiKTeX/fonts
+/type1/urw/helvetic/uhvb8ac.pfb><C:/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb>
+<C:/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on refman.pdf (20 pages, 138980 bytes).
 PDF statistics:
- 35 PDF objects out of 1000 (max. 8388607)
- 6 named destinations out of 1000 (max. 500000)
+ 440 PDF objects out of 1000 (max. 8388607)
+ 155 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
