@@ -34,9 +34,9 @@ class Program
 
         while (true)
         {
+            UI.Menu(user);
             IUserInput userInput = new Input();
-            var input = UI.HandleInput(userInput);
-            UI.Menu(user, input);
+            UI.Input(user, userInput);
         }
     }
 }

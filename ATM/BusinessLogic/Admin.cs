@@ -23,14 +23,18 @@ class Admin : User
     /// <returns>
     /// String that was input.
     /// </returns>
-    override public string DisplayMenu(string input)
+    override public void DisplayMenu()
     {
         Console.WriteLine("1----Create New Account");
         Console.WriteLine("2----Delete Existing Account");
         Console.WriteLine("3----Update Account Information");
         Console.WriteLine("4----Search for Account");
         Console.WriteLine("5----Exit");
+        Console.Write("Input menu option: ");
+    }
 
+    override public string MenuInput(string input)
+    {
         return HandleMenuInput(input);
     }
 

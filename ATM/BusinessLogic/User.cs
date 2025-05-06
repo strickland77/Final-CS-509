@@ -120,7 +120,9 @@ abstract class User : IUser
         balance = input_balance;
     }
 
-    public abstract string DisplayMenu(string input);
+    public abstract void DisplayMenu();
+
+    public abstract string MenuInput(string input);
 
     /// <summary>
     /// Displays the menu for a user and handles the user input to select an action.

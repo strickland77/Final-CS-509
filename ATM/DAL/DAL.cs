@@ -18,7 +18,7 @@ class DAL : IDAL
         MySql.Data.MySqlClient.MySqlConnection conn;
         string myConnectionString;
 
-        myConnectionString = "server=127.0.0.1;port=3306;uid=root;pwd=password;database=ATM";
+        myConnectionString = Environment.GetEnvironmentVariable("CONNECTION");
 
         conn = new MySql.Data.MySqlClient.MySqlConnection();
         conn.ConnectionString = myConnectionString;
@@ -32,7 +32,6 @@ class DAL : IDAL
             Console.WriteLine("Unable to connect to database...");
             return null;
         }
-        conn.Open();
 
         return conn;
     }

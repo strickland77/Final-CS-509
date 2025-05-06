@@ -12,9 +12,10 @@ class UI
     /// <returns>
     /// String returned from getting input with IUserInput.
     /// </returns>
-    public static string HandleInput(IUserInput input)
+    public static string Input(IUser user, IUserInput input)
     {
-        return input.GetInput();
+        var uInput = input.GetInput();
+        return user.MenuInput(uInput);
     }
 
     /// <summary>
@@ -29,8 +30,8 @@ class UI
     /// <returns>
     /// String that was provided as input.
     /// </returns>
-    public static string Menu(IUser user, string input)
+    public static void Menu(IUser user)
     {
-        return user.DisplayMenu(input);
+        user.DisplayMenu();
     }
 }

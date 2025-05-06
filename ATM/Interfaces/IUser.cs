@@ -19,5 +19,7 @@ interface IUser
 
     protected void SetAccountBalance(double input_balance);
 
-    internal string DisplayMenu(string input);
+    internal void DisplayMenu();
+
+    internal string MenuInput(string input);
 }

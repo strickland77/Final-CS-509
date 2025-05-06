@@ -10,7 +10,11 @@ public class UserTest
         {
         }
 
-        override public string DisplayMenu(string input)
+        override public void DisplayMenu()
+        {
+        }
+
+        public override string MenuInput(string input)
         {
             return input;
         }
@@ -110,17 +114,5 @@ public class UserTest
 
         user.SetAccountBalance(expectedBalance);
         user.GetAccountBalance().Should().Be(expectedBalance);
-    }
-
-    [Fact]
-    public void test_displayMenu()
-    {
-        Fixture fixture = new Fixture();
-        string testInput = fixture.Create<string>();
-        
-        var mock = new Mock<IUser>();
-        User user = new TestUser(mock.Object);
-
-        user.DisplayMenu(testInput).Should().Be(testInput);
     }
 }

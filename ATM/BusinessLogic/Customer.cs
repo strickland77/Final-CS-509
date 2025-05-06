@@ -22,13 +22,17 @@ class Customer : User
     /// <returns>
     /// String that was input.
     /// </returns>
-    override public string DisplayMenu(string input)
+    override public void DisplayMenu()
     {
         Console.WriteLine("1----Withdraw Cash");
         Console.WriteLine("2----Deposit Cash");
         Console.WriteLine("3----Display Balance");
         Console.WriteLine("4----Exit");
+        Console.Write("Input menu option: ");
+    }
 
+    override public string MenuInput(string input)
+    {
         return HandleMenuInput(input);
     }
 

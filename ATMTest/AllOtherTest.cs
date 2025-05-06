@@ -21,16 +21,44 @@ public class AllOtherTest
         StringWriter sw = new StringWriter();
         Console.SetOut(sw);
 
-        var testInput = "0";
-        var expectedOutput = user.DisplayMenu(testInput);
-        Assert.Equal(expectedOutput, testInput);
-
+        user.DisplayMenu();
         var nl = Environment.NewLine;
         string expected = $"1----Withdraw Cash{nl}" +
                           $"2----Deposit Cash{nl}" +
                           $"3----Display Balance{nl}" +
                           $"4----Exit{nl}" +
-                          $"Invalid input...{nl}";
+                          "Input menu option: ";
+
+        Assert.Equal(expected, sw.ToString());
+        
+        var standardOutput = new StreamWriter(Console.OpenStandardOutput());
+        standardOutput.AutoFlush = true;
+        Console.SetOut(standardOutput);
+    }
+
+        [Fact]
+    public void test_customer_menuInput()
+    {
+        Fixture fixture = new Fixture();
+        
+        string login = fixture.Create<string>();
+        int pin = fixture.Create<int>();
+        string name = fixture.Create<string>();
+        double balance = fixture.Create<double>();
+        int accountNumber = fixture.Create<int>();
+        string status = fixture.Create<string>();
+
+        Customer user = new Customer(login, pin, name, balance, accountNumber, status);
+
+        StringWriter sw = new StringWriter();
+        Console.SetOut(sw);
+
+        var testInput = "0";
+        var expectedOutput = user.MenuInput(testInput);
+        Assert.Equal(expectedOutput, testInput);
+
+        var nl = Environment.NewLine;
+        string expected = $"Invalid input...{nl}";
 
         Assert.Equal(expected, sw.ToString());
         
@@ -56,17 +84,45 @@ public class AllOtherTest
         StringWriter sw = new StringWriter();
         Console.SetOut(sw);
 
-        var testInput = "0";
-        var expectedOutput = user.DisplayMenu(testInput);
-        Assert.Equal(expectedOutput, testInput);
-
+        user.DisplayMenu();
         var nl = Environment.NewLine;
         string expected = $"1----Create New Account{nl}" +
                           $"2----Delete Existing Account{nl}" +
                           $"3----Update Account Information{nl}" +
                           $"4----Search for Account{nl}" +
                           $"5----Exit{nl}" +
-                          $"Invalid input...{nl}";
+                          "Input menu option: ";
+
+        Assert.Equal(expected, sw.ToString());
+        
+        var standardOutput = new StreamWriter(Console.OpenStandardOutput());
+        standardOutput.AutoFlush = true;
+        Console.SetOut(standardOutput);
+    }
+
+        [Fact]
+    public void test_admin_menuInput()
+    {
+        Fixture fixture = new Fixture();
+
+        string login = fixture.Create<string>();
+        int pin = fixture.Create<int>();
+        string name = fixture.Create<string>();
+        double balance = fixture.Create<double>();
+        int accountNumber = fixture.Create<int>();
+        string status = fixture.Create<string>();
+
+        Admin user = new Admin(login, pin, name, balance, accountNumber, status);
+
+        StringWriter sw = new StringWriter();
+        Console.SetOut(sw);
+
+        var testInput = "0";
+        var expectedOutput = user.MenuInput(testInput);
+        Assert.Equal(expectedOutput, testInput);
+
+        var nl = Environment.NewLine;
+        string expected = $"Invalid input...{nl}";
 
         Assert.Equal(expected, sw.ToString());
         
@@ -130,10 +186,12 @@ public class AllOtherTest
         Fixture fixture = new Fixture();
         string input = fixture.Create<string>();
 
-        var mock = new Mock<IUserInput>();
-        mock.Setup(x => x.GetInput()).Returns(input);
+        var mockUI = new Mock<IUserInput>();
+        mockUI.Setup(x => x.GetInput()).Returns(input);
+        var mockUser = new Mock<IUser>();
+        mockUser.Setup(y => y.MenuInput(input)).Returns(input);
 
-        UI.HandleInput(mock.Object).Should().Be(input);
+        UI.Input(mockUser.Object, mockUI.Object).Should().Be(input);
     }
 
     [Fact]
@@ -143,8 +201,8 @@ public class AllOtherTest
         string input = fixture.Create<string>();
 
         var mock = new Mock<IUser>();
-        mock.Setup(x => x.DisplayMenu(input)).Returns(input);
+        mock.Setup(x => x.MenuInput(input)).Returns(input);
 
-        UI.Menu(mock.Object, input).Should().Be(input);
+        UI.Menu(mock.Object);
     }
 }
