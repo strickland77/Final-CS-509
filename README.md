@@ -8,3 +8,5 @@ admin	12345	Admin	0	    1	    1
 bob	    12345	Bob	    1850	Active	2
 tim	    12345	Tim	    500	    Active	4
 tom	    12345	Tom	    12000	Active	5
+
+Doxygen PDF can be found here: latex\refman.pdf
