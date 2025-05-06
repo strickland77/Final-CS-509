@@ -5,10 +5,11 @@ CONNECTION="server=127.0.0.1;port=3306;uid=user;pwd=password;database=DBName"
 set to a string with the above format.
 
 Existing users in the atm_dump.sql  
-LOGIN---PIN-----NAME----BALANCE-STATUS--ACCOUNT_NUMBER  
-admin---12345---Admin---0-------Active--1  
-bob-----12345---Bob-----1850----Active--2  
-tim-----12345---Tim-----500-----Active--4  
-tom-----12345---Tom-----12000---Active--5
+| LOGIN  | PIN   | NAME  | BALANCE | STATUS | ACCOUNT_NUMBER |
+| ------ | ----- | ----- | ------- | ------ | -------------- |
+| admin  | 12345 | Admin | 0       | Active | 1              |
+| bob    | 12345 | Bob   | 1850    | Active | 2              |
+| tim    | 12345 | Tim   | 500     | Active | 4              |
+| tom    | 12345 | Tom   | 12000   | Active | 5              |
 
 Doxygen PDF can be found in: latex\refman.pdf
