@@ -9,17 +9,15 @@ class Program
     private static void Main()
     {
         Console.WriteLine("Welcome to the ATM");
-        var login = "";
-        var input_pin = "";
         int pin;
         User user = null;
         while (user == null)
         {
             Console.Write("Input login: ");
-            login = Console.ReadLine();
+            string? login = Console.ReadLine();
             Console.Write("Input pin: ");
-            input_pin = Console.ReadLine();
-            if (!Int32.TryParse(input_pin, out pin))
+            string? input_pin = Console.ReadLine();
+            if (!int.TryParse(input_pin, out pin))
             {
                 Console.WriteLine("Input pin was not a number...");
             }

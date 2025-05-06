@@ -1,0 +1,16 @@
+version: 1.0.{build}
+build_script:
+- ps: >-
+    dotnet add .\ATM\ package Microsoft.NetFramework.Analyzers --version 3.3.2
+
+    dotnet format
+
+    dotnet restore
+
+    dotnet build -c Debug
+
+    dotnet build -c Release
+
+    doxygen .\ATM\Doxyfile
+
+    dotnet test
