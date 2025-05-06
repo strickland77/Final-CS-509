@@ -1,4 +1,5 @@
 var class_customer =
 [
-    [ "DisplayMenu", "class_customer.html#af4899c68acf54bc3bacd0969f4c031a6", null ]
+    [ "DisplayMenu", "class_customer.html#a6954749d1b4ce5bdd8a6b0ff705c5fb3", null ],
+    [ "MenuInput", "class_customer.html#a49fbf836c7f14e38bc4a26e212374c64", null ]
 ];

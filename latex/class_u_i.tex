@@ -8,9 +8,9 @@
 \doxysubsubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static string \mbox{\hyperlink{class_u_i_a7bc6cf45faa68b6b0fb8885ab9719e68}{Handle\+Input}} (\mbox{\hyperlink{interface_i_user_input}{IUser\+Input}} input)
+static string \mbox{\hyperlink{class_u_i_a6415607262d257d7c196dcff869cc9a0}{Input}} (\mbox{\hyperlink{interface_i_user}{IUser}} user, \mbox{\hyperlink{interface_i_user_input}{IUser\+Input}} input)
 \begin{DoxyCompactList}\small\item\em Handles getting input. \end{DoxyCompactList}\item 
-static string \mbox{\hyperlink{class_u_i_a10a9a945b16135e623b642d0112e498d}{Menu}} (\mbox{\hyperlink{interface_i_user}{IUser}} user, string input)
+static void \mbox{\hyperlink{class_u_i_af10a61b4e20855707e4841b59d1e386e}{Menu}} (\mbox{\hyperlink{interface_i_user}{IUser}} user)
 \begin{DoxyCompactList}\small\item\em Menu functionality for the program. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -18,11 +18,11 @@ static string \mbox{\hyperlink{class_u_i_a10a9a945b16135e623b642d0112e498d}{Menu
 \doxylink{class_u_i}{UI} class to handle interaction between a user of the program and the business logic layer. 
 
 \doxysubsection{Member Function Documentation}
-\Hypertarget{class_u_i_a7bc6cf45faa68b6b0fb8885ab9719e68}\index{UI@{UI}!HandleInput@{HandleInput}}
-\index{HandleInput@{HandleInput}!UI@{UI}}
-\doxysubsubsection{\texorpdfstring{HandleInput()}{HandleInput()}}
-{\footnotesize\ttfamily \label{class_u_i_a7bc6cf45faa68b6b0fb8885ab9719e68} 
-static string UI.\+Handle\+Input (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_i_user_input}{IUser\+Input}}}]{input}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+\Hypertarget{class_u_i_a6415607262d257d7c196dcff869cc9a0}\index{UI@{UI}!Input@{Input}}
+\index{Input@{Input}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{Input()}{Input()}}
+{\footnotesize\ttfamily \label{class_u_i_a6415607262d257d7c196dcff869cc9a0} 
+static string UI.\+Input (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_i_user}{IUser}}}]{user}{, }\item[{\mbox{\hyperlink{interface_i_user_input}{IUser\+Input}}}]{input}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -36,11 +36,11 @@ Handles getting input.
 \begin{DoxyReturn}{Returns}
 String returned from getting input with \doxylink{interface_i_user_input}{IUser\+Input}. 
 \end{DoxyReturn}
-\Hypertarget{class_u_i_a10a9a945b16135e623b642d0112e498d}\index{UI@{UI}!Menu@{Menu}}
+\Hypertarget{class_u_i_af10a61b4e20855707e4841b59d1e386e}\index{UI@{UI}!Menu@{Menu}}
 \index{Menu@{Menu}!UI@{UI}}
 \doxysubsubsection{\texorpdfstring{Menu()}{Menu()}}
-{\footnotesize\ttfamily \label{class_u_i_a10a9a945b16135e623b642d0112e498d} 
-static string UI.\+Menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_i_user}{IUser}}}]{user}{, }\item[{string}]{input}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily \label{class_u_i_af10a61b4e20855707e4841b59d1e386e} 
+static void UI.\+Menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_i_user}{IUser}}}]{user}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 

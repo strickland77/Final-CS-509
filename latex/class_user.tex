@@ -30,7 +30,9 @@ int \mbox{\hyperlink{class_user_a29e3b83031576ccccfbff563b6df35ac}{Get\+Account\
 \begin{DoxyCompactList}\small\item\em Gets the account pin for this user. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_user_a8575d33e8a462cf6fcd99a85b5a04bb7}{Set\+Account\+Balance}} (double input\+\_\+balance)
 \begin{DoxyCompactList}\small\item\em Sets the account balance for this user. \end{DoxyCompactList}\item 
-string \mbox{\hyperlink{class_user_ace9ea0e5af14e69dedcefcd5f7453f12}{Display\+Menu}} (string input)
+void \mbox{\hyperlink{class_user_a9efffe90c6c54671cae0af8c610f238d}{Display\+Menu}} ()
+\item 
+string \mbox{\hyperlink{class_user_aa230efd7eb9a7caf77af4b1df28a9c05}{Menu\+Input}} (string input)
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -49,11 +51,11 @@ string \mbox{\hyperlink{class_user_aa03749ee4ad36ce53b0c5f806bb662a2}{Handle\+Me
 \doxylink{class_user}{User} abstract class with core functionality for all users. 
 
 \doxysubsection{Member Function Documentation}
-\Hypertarget{class_user_ace9ea0e5af14e69dedcefcd5f7453f12}\index{User@{User}!DisplayMenu@{DisplayMenu}}
+\Hypertarget{class_user_a9efffe90c6c54671cae0af8c610f238d}\index{User@{User}!DisplayMenu@{DisplayMenu}}
 \index{DisplayMenu@{DisplayMenu}!User@{User}}
 \doxysubsubsection{\texorpdfstring{DisplayMenu()}{DisplayMenu()}}
-{\footnotesize\ttfamily \label{class_user_ace9ea0e5af14e69dedcefcd5f7453f12} 
-string User.\+Display\+Menu (\begin{DoxyParamCaption}\item[{string}]{input}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+{\footnotesize\ttfamily \label{class_user_a9efffe90c6c54671cae0af8c610f238d} 
+void User.\+Display\+Menu (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
 
 
 
@@ -193,6 +195,16 @@ Displays the menu for a user and handles the user input to select an action.
 \begin{DoxyReturn}{Returns}
 String that was input. 
 \end{DoxyReturn}
+\Hypertarget{class_user_aa230efd7eb9a7caf77af4b1df28a9c05}\index{User@{User}!MenuInput@{MenuInput}}
+\index{MenuInput@{MenuInput}!User@{User}}
+\doxysubsubsection{\texorpdfstring{MenuInput()}{MenuInput()}}
+{\footnotesize\ttfamily \label{class_user_aa230efd7eb9a7caf77af4b1df28a9c05} 
+string User.\+Menu\+Input (\begin{DoxyParamCaption}\item[{string}]{input}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Implements \mbox{\hyperlink{interface_i_user}{IUser}}.
+
 \Hypertarget{class_user_a8575d33e8a462cf6fcd99a85b5a04bb7}\index{User@{User}!SetAccountBalance@{SetAccountBalance}}
 \index{SetAccountBalance@{SetAccountBalance}!User@{User}}
 \doxysubsubsection{\texorpdfstring{SetAccountBalance()}{SetAccountBalance()}}
@@ -216,4 +228,4 @@ Implements \mbox{\hyperlink{interface_i_user}{IUser}}.
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-ATM/\+Business\+\_\+\+Logic/User.\+cs\end{DoxyCompactItemize}
+ATM/\+Business\+Logic/User.\+cs\end{DoxyCompactItemize}

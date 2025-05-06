@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.3)  4 MAY 2025 23:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.3)  5 MAY 2025 23:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -957,7 +957,7 @@ LaTeX Warning: Reference `class_user' on page 3 undefined on input line 13.
 Chapter 3.
 (class_admin.tex
 Package epstopdf Info: Source file: <class_admin.eps>
-(epstopdf)                    date: 2025-05-04 23:16:05
+(epstopdf)                    date: 2025-05-05 23:04:11
 (epstopdf)                    size: 3862 bytes
 (epstopdf)             Output file: <class_admin-eps-converted-to.pdf>
 (epstopdf)             Command: <miktex-epstopdf --outfile=class_admin-eps-conv
@@ -998,27 +998,29 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 (Font)              scaled to size 8.09995pt on input line 18.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 10.79993pt on input line 19.
+(Font)              scaled to size 10.79993pt on input line 21.
 
 
 [5]
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.19995pt on input line 64.
+(Font)              scaled to size 7.19995pt on input line 68.
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 65.
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 83.
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 3.1 on input line 75.
+(longtable)                in table 3.1 on input line 93.
 
 
-Underfull \hbox (badness 10000) detected at line 76
+Underfull \hbox (badness 10000) detected at line 94
 [][][]
  []
 
 ) (class_customer.tex
+
+[6]
 Package epstopdf Info: Source file: <class_customer.eps>
-(epstopdf)                    date: 2025-05-04 23:16:06
+(epstopdf)                    date: 2025-05-05 23:04:12
 (epstopdf)                    size: 3867 bytes
 (epstopdf)             Output file: <class_customer-eps-converted-to.pdf>
 (epstopdf)             Command: <miktex-epstopdf --outfile=class_customer-eps-c
@@ -1042,21 +1044,19 @@ l.11 ...raphics[height=3.000000cm]{class_customer}
 ? 
 
 
-[6]
-
 [7]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 3.2 on input line 75.
+(longtable)                in table 3.2 on input line 93.
 
 
-Underfull \hbox (badness 10000) detected at line 76
+Underfull \hbox (badness 10000) detected at line 94
 [][][]
  []
 
 ) (class_d_a_l.tex
 Package epstopdf Info: Source file: <class_d_a_l.eps>
-(epstopdf)                    date: 2025-05-04 23:16:06
+(epstopdf)                    date: 2025-05-05 23:04:12
 (epstopdf)                    size: 3756 bytes
 (epstopdf)             Output file: <class_d_a_l-eps-converted-to.pdf>
 (epstopdf)             Command: <miktex-epstopdf --outfile=class_d_a_l-eps-conv
@@ -1079,13 +1079,15 @@ l.11 ...degraphics[height=2.000000cm]{class_d_a_l}
                                                   
 ? 
 
+
+[8]
 Underfull \hbox (badness 10000) detected at line 37
 [][][]
  []
 
 
 
-[8]
+[9]
 
 Package longtable Warning: Column widths have changed
 (longtable)                in table 3.3 on input line 60.
@@ -1107,7 +1109,7 @@ Underfull \hbox (badness 10000) detected at line 36
 
 
 
-[9]
+[10]
 
 Package longtable Warning: Column widths have changed
 (longtable)                in table 3.5 on input line 57.
@@ -1119,7 +1121,7 @@ Underfull \hbox (badness 10000) detected at line 58
 
 ) (interface_i_d_a_l.tex
 Package epstopdf Info: Source file: <interface_i_d_a_l.eps>
-(epstopdf)                    date: 2025-05-04 23:16:06
+(epstopdf)                    date: 2025-05-05 23:04:13
 (epstopdf)                    size: 3756 bytes
 (epstopdf)             Output file: <interface_i_d_a_l-eps-converted-to.pdf>
 (epstopdf)             Command: <miktex-epstopdf --outfile=interface_i_d_a_l-ep
@@ -1148,7 +1150,7 @@ Underfull \hbox (badness 10000) detected at line 37
 
 
 
-[10]
+[11]
 
 Package longtable Warning: Column widths have changed
 (longtable)                in table 3.6 on input line 60.
@@ -1160,7 +1162,7 @@ Underfull \hbox (badness 10000) detected at line 61
 
 ) (class_input.tex
 Package epstopdf Info: Source file: <class_input.eps>
-(epstopdf)                    date: 2025-05-04 23:16:07
+(epstopdf)                    date: 2025-05-05 23:04:13
 (epstopdf)                    size: 3772 bytes
 (epstopdf)             Output file: <class_input-eps-converted-to.pdf>
 (epstopdf)             Command: <miktex-epstopdf --outfile=class_input-eps-conv
@@ -1189,9 +1191,9 @@ Underfull \hbox (badness 10000) detected at line 35
 
 
 
-[11]) (interface_i_user.tex
+[12]) (interface_i_user.tex
 Package epstopdf Info: Source file: <interface_i_user.eps>
-(epstopdf)                    date: 2025-05-04 23:16:07
+(epstopdf)                    date: 2025-05-05 23:04:13
 (epstopdf)                    size: 3976 bytes
 (epstopdf)             Output file: <interface_i_user-eps-converted-to.pdf>
 (epstopdf)             Command: <miktex-epstopdf --outfile=interface_i_user-eps
@@ -1217,9 +1219,9 @@ LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 41.
 ) (interface_i_user_input.tex
 
-[12]
+[13]
 Package epstopdf Info: Source file: <interface_i_user_input.eps>
-(epstopdf)                    date: 2025-05-04 23:16:08
+(epstopdf)                    date: 2025-05-05 23:04:14
 (epstopdf)                    size: 3772 bytes
 (epstopdf)             Output file: <interface_i_user_input-eps-converted-to.pd
 f>
@@ -1245,7 +1247,7 @@ l.11 ...height=2.000000cm]{interface_i_user_input}
 ? 
 ) (class_program.tex) (class_u_i.tex
 
-[13]
+[14]
 
 Package longtable Warning: Column widths have changed
 (longtable)                in table 3.7 on input line 35.
@@ -1257,7 +1259,7 @@ Underfull \hbox (badness 10000) detected at line 36
 
 
 
-[14]
+[15]
 
 Package longtable Warning: Column widths have changed
 (longtable)                in table 3.8 on input line 55.
@@ -1269,7 +1271,7 @@ Underfull \hbox (badness 10000) detected at line 56
 
 ) (class_user.tex
 Package epstopdf Info: Source file: <class_user.eps>
-(epstopdf)                    date: 2025-05-04 23:16:08
+(epstopdf)                    date: 2025-05-05 23:04:14
 (epstopdf)                    size: 3976 bytes
 (epstopdf)             Output file: <class_user-eps-converted-to.pdf>
 (epstopdf)             Command: <miktex-epstopdf --outfile=class_user-eps-conve
@@ -1293,57 +1295,61 @@ l.11 ...udegraphics[height=3.000000cm]{class_user}
 ? 
 
 
-[15]
-Underfull \hbox (badness 10000) detected at line 86
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 103
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 120
-[][][]
- []
-
-
-
 [16]
-Underfull \hbox (badness 10000) detected at line 137
+Underfull \hbox (badness 10000) detected at line 88
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 154
+Underfull \hbox (badness 10000) detected at line 105
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 171
+Underfull \hbox (badness 10000) detected at line 122
 [][][]
  []
 
 
 
 [17]
+Underfull \hbox (badness 10000) detected at line 139
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 156
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 173
+[][][]
+ []
+
+
+
+[18]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 3.9 on input line 192.
+(longtable)                in table 3.9 on input line 194.
 
 
-Underfull \hbox (badness 10000) detected at line 193
+Underfull \hbox (badness 10000) detected at line 195
 [][][]
  []
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 3.10 on input line 210.
+(longtable)                in table 3.10 on input line 222.
 
 )
 
-[18]
+[19]
+
+[20
+
+]
 No file refman.ind.
 
 Package longtable Warning: Table widths have changed. Rerun LaTeX.
@@ -1367,23 +1373,24 @@ Package rerunfilecheck Warning: File `refman.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `refman.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  72DC79FD985B6732AE5A2DD22280B36B;12109.
+(rerunfilecheck)             After:  F9E993A13BA7CCDD984937AE48C707D8;12620.
  ) 
 Here is how much of TeX's memory you used:
- 18535 strings out of 469959
- 294689 string characters out of 5486670
+ 18546 strings out of 469959
+ 295048 string characters out of 5486670
  706808 words of memory out of 5000000
- 44843 multiletter control sequences out of 15000+600000
+ 44846 multiletter control sequences out of 15000+600000
  675596 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  101i,15n,117p,459b,750s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/MiKTeX/fonts/type1/urw/cour
-ier/ucrro8a.pfb><C:/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/MiKTeX/fonts
-/type1/urw/helvetic/uhvb8ac.pfb><C:/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb>
-<C:/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (20 pages, 138980 bytes).
+<C:/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/MiKTeX/fonts/type1/u
+rw/courier/ucrr8a.pfb><C:/MiKTeX/fonts/type1/urw/courier/ucrro8a.pfb><C:/MiKTeX
+/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/MiKTeX/fonts/type1/urw/helvetic/uhvb8a
+c.pfb><C:/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/MiKTeX/fonts/type1/urw
+/helvetic/uhvro8a.pfb>
+Output written on refman.pdf (22 pages, 153403 bytes).
 PDF statistics:
- 440 PDF objects out of 1000 (max. 8388607)
- 155 named destinations out of 1000 (max. 500000)
+ 475 PDF objects out of 1000 (max. 8388607)
+ 163 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

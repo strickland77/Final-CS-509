@@ -14,8 +14,10 @@ Inheritance diagram for Admin\+:\begin{figure}[H]
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-override string \mbox{\hyperlink{class_admin_a70eaec16c2933e1c87a23b3d1a542ee9}{Display\+Menu}} (string input)
-\begin{DoxyCompactList}\small\item\em Displays the menu for an \doxylink{class_admin}{Admin} and handles the user input to select an action. \end{DoxyCompactList}\end{DoxyCompactItemize}
+override void \mbox{\hyperlink{class_admin_a3ea82d3e3e46998269c4fc3aee562fa6}{Display\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Displays the menu for an \doxylink{class_admin}{Admin} and handles the user input to select an action. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_admin_a189e9e4a1fe4a7f8c0c8987e996a695c}{Menu\+Input}} (string input)
+\begin{DoxyCompactList}\small\item\em Utilizes menu input for a \doxylink{class_admin}{Admin} and handles the user input to select an action. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_user}{User}}}
 \begin{DoxyCompactItemize}
 \item 
@@ -35,7 +37,9 @@ int \mbox{\hyperlink{class_user_a29e3b83031576ccccfbff563b6df35ac}{Get\+Account\
 \begin{DoxyCompactList}\small\item\em Gets the account pin for this user. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_user_a8575d33e8a462cf6fcd99a85b5a04bb7}{Set\+Account\+Balance}} (double input\+\_\+balance)
 \begin{DoxyCompactList}\small\item\em Sets the account balance for this user. \end{DoxyCompactList}\item 
-string \mbox{\hyperlink{class_user_ace9ea0e5af14e69dedcefcd5f7453f12}{Display\+Menu}} (string input)
+void \mbox{\hyperlink{class_user_a9efffe90c6c54671cae0af8c610f238d}{Display\+Menu}} ()
+\item 
+string \mbox{\hyperlink{class_user_aa230efd7eb9a7caf77af4b1df28a9c05}{Menu\+Input}} (string input)
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -58,15 +62,29 @@ string \mbox{\hyperlink{class_user_aa03749ee4ad36ce53b0c5f806bb662a2}{Handle\+Me
 \doxylink{class_admin}{Admin} class inheriting from user with extra functionality. 
 
 \doxysubsection{Member Function Documentation}
-\Hypertarget{class_admin_a70eaec16c2933e1c87a23b3d1a542ee9}\index{Admin@{Admin}!DisplayMenu@{DisplayMenu}}
+\Hypertarget{class_admin_a3ea82d3e3e46998269c4fc3aee562fa6}\index{Admin@{Admin}!DisplayMenu@{DisplayMenu}}
 \index{DisplayMenu@{DisplayMenu}!Admin@{Admin}}
 \doxysubsubsection{\texorpdfstring{DisplayMenu()}{DisplayMenu()}}
-{\footnotesize\ttfamily \label{class_admin_a70eaec16c2933e1c87a23b3d1a542ee9} 
-override string Admin.\+Display\+Menu (\begin{DoxyParamCaption}\item[{string}]{input}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{class_admin_a3ea82d3e3e46998269c4fc3aee562fa6} 
+override void Admin.\+Display\+Menu (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
 
 
 Displays the menu for an \doxylink{class_admin}{Admin} and handles the user input to select an action. 
+
+\texorpdfstring{$>$}{>} 
+
+Implements \mbox{\hyperlink{interface_i_user}{IUser}}.
+
+\Hypertarget{class_admin_a189e9e4a1fe4a7f8c0c8987e996a695c}\index{Admin@{Admin}!MenuInput@{MenuInput}}
+\index{MenuInput@{MenuInput}!Admin@{Admin}}
+\doxysubsubsection{\texorpdfstring{MenuInput()}{MenuInput()}}
+{\footnotesize\ttfamily \label{class_admin_a189e9e4a1fe4a7f8c0c8987e996a695c} 
+override string Admin.\+Menu\+Input (\begin{DoxyParamCaption}\item[{string}]{input}{}\end{DoxyParamCaption})}
+
+
+
+Utilizes menu input for a \doxylink{class_admin}{Admin} and handles the user input to select an action. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -74,7 +92,7 @@ Displays the menu for an \doxylink{class_admin}{Admin} and handles the user inpu
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-String that was input. 
+String returned from Handle\+Menu\+Input function. 
 \end{DoxyReturn}
 
 
@@ -84,4 +102,4 @@ Implements \mbox{\hyperlink{interface_i_user}{IUser}}.
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-ATM/\+Business\+\_\+\+Logic/Admin.\+cs\end{DoxyCompactItemize}
+ATM/\+Business\+Logic/Admin.\+cs\end{DoxyCompactItemize}

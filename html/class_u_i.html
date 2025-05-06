@@ -114,18 +114,18 @@ $(function(){initNavTree('class_u_i.html',''); initResizable(true); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a7bc6cf45faa68b6b0fb8885ab9719e68" id="r_a7bc6cf45faa68b6b0fb8885ab9719e68"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7bc6cf45faa68b6b0fb8885ab9719e68">HandleInput</a> (<a class="el" href="interface_i_user_input.html">IUserInput</a> input)</td></tr>
-<tr class="memdesc:a7bc6cf45faa68b6b0fb8885ab9719e68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles getting input.  <br /></td></tr>
-<tr class="separator:a7bc6cf45faa68b6b0fb8885ab9719e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10a9a945b16135e623b642d0112e498d" id="r_a10a9a945b16135e623b642d0112e498d"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10a9a945b16135e623b642d0112e498d">Menu</a> (<a class="el" href="interface_i_user.html">IUser</a> user, string input)</td></tr>
-<tr class="memdesc:a10a9a945b16135e623b642d0112e498d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Menu functionality for the program.  <br /></td></tr>
-<tr class="separator:a10a9a945b16135e623b642d0112e498d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6415607262d257d7c196dcff869cc9a0" id="r_a6415607262d257d7c196dcff869cc9a0"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6415607262d257d7c196dcff869cc9a0">Input</a> (<a class="el" href="interface_i_user.html">IUser</a> user, <a class="el" href="interface_i_user_input.html">IUserInput</a> input)</td></tr>
+<tr class="memdesc:a6415607262d257d7c196dcff869cc9a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles getting input.  <br /></td></tr>
+<tr class="separator:a6415607262d257d7c196dcff869cc9a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af10a61b4e20855707e4841b59d1e386e" id="r_af10a61b4e20855707e4841b59d1e386e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af10a61b4e20855707e4841b59d1e386e">Menu</a> (<a class="el" href="interface_i_user.html">IUser</a> user)</td></tr>
+<tr class="memdesc:af10a61b4e20855707e4841b59d1e386e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Menu functionality for the program.  <br /></td></tr>
+<tr class="separator:af10a61b4e20855707e4841b59d1e386e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_u_i.html" title="UI class to handle interaction between a user of the program and the business logic layer.">UI</a> class to handle interaction between a user of the program and the business logic layer. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a7bc6cf45faa68b6b0fb8885ab9719e68" name="a7bc6cf45faa68b6b0fb8885ab9719e68"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7bc6cf45faa68b6b0fb8885ab9719e68">&#9670;&#160;</a></span>HandleInput()</h2>
+<a id="a6415607262d257d7c196dcff869cc9a0" name="a6415607262d257d7c196dcff869cc9a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6415607262d257d7c196dcff869cc9a0">&#9670;&#160;</a></span>Input()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -134,10 +134,14 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static string UI.HandleInput </td>
+          <td class="memname">static string UI.Input </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="interface_i_user_input.html">IUserInput</a></td>          <td class="paramname"><span class="paramname"><em>input</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="interface_i_user.html">IUser</a></td>          <td class="paramname"><span class="paramname"><em>user</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="interface_i_user_input.html">IUserInput</a></td>          <td class="paramname"><span class="paramname"><em>input</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -158,8 +162,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a10a9a945b16135e623b642d0112e498d" name="a10a9a945b16135e623b642d0112e498d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10a9a945b16135e623b642d0112e498d">&#9670;&#160;</a></span>Menu()</h2>
+<a id="af10a61b4e20855707e4841b59d1e386e" name="af10a61b4e20855707e4841b59d1e386e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af10a61b4e20855707e4841b59d1e386e">&#9670;&#160;</a></span>Menu()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -168,14 +172,10 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static string UI.Menu </td>
+          <td class="memname">static void UI.Menu </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="interface_i_user.html">IUser</a></td>          <td class="paramname"><span class="paramname"><em>user</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="interface_i_user.html">IUser</a></td>          <td class="paramname"><span class="paramname"><em>user</em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>input</em></span>&#160;)</td>
         </tr>
       </table>
   </td>

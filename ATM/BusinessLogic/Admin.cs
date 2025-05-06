@@ -16,13 +16,7 @@ class Admin : User
 
     /// <summary>
     /// Displays the menu for an Admin and handles the user input to select an action.
-    /// </summary>
-    /// <param name="input">
-    /// String number to select an action from the menu.
-    /// </param>
-    /// <returns>
-    /// String that was input.
-    /// </returns>
+    /// </summary>>
     override public void DisplayMenu()
     {
         Console.WriteLine("1----Create New Account");
@@ -33,6 +27,15 @@ class Admin : User
         Console.Write("Input menu option: ");
     }
 
+    /// <summary>
+    /// Utilizes menu input for a Admin and handles the user input to select an action.
+    /// </summary>
+    /// <param name="input">
+    /// String number to select an action from the menu.
+    /// </param>
+    /// <returns>
+    /// String returned from HandleMenuInput function.
+    /// </returns>
     override public string MenuInput(string input)
     {
         return HandleMenuInput(input);

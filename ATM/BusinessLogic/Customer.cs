@@ -16,12 +16,6 @@ class Customer : User
     /// <summary>
     /// Displays the menu for a Customer and handles the user input to select an action.
     /// </summary>
-    /// <param name="input">
-    /// String number to select an action from the menu.
-    /// </param>
-    /// <returns>
-    /// String that was input.
-    /// </returns>
     override public void DisplayMenu()
     {
         Console.WriteLine("1----Withdraw Cash");
@@ -31,6 +25,15 @@ class Customer : User
         Console.Write("Input menu option: ");
     }
 
+    /// <summary>
+    /// Utilizes menu input for a Customer and handles the user input to select an action.
+    /// </summary>
+    /// <param name="input">
+    /// String number to select an action from the menu.
+    /// </param>
+    /// <returns>
+    /// String returned from HandleMenuInput function.
+    /// </returns>
     override public string MenuInput(string input)
     {
         return HandleMenuInput(input);
