@@ -1,0 +1,63 @@
+\doxysection{UI Class Reference}
+\hypertarget{class_u_i}{}\label{class_u_i}\index{UI@{UI}}
+
+
+\doxylink{class_u_i}{UI} class to handle interaction between a user of the program and the business logic layer.  
+
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{class_u_i_a7bc6cf45faa68b6b0fb8885ab9719e68}{Handle\+Input}} (\mbox{\hyperlink{interface_i_user_input}{IUser\+Input}} input)
+\begin{DoxyCompactList}\small\item\em Handles getting input. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_u_i_a10a9a945b16135e623b642d0112e498d}{Menu}} (\mbox{\hyperlink{interface_i_user}{IUser}} user, string input)
+\begin{DoxyCompactList}\small\item\em Menu functionality for the program. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_u_i}{UI} class to handle interaction between a user of the program and the business logic layer. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_u_i_a7bc6cf45faa68b6b0fb8885ab9719e68}\index{UI@{UI}!HandleInput@{HandleInput}}
+\index{HandleInput@{HandleInput}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{HandleInput()}{HandleInput()}}
+{\footnotesize\ttfamily \label{class_u_i_a7bc6cf45faa68b6b0fb8885ab9719e68} 
+static string UI.\+Handle\+Input (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_i_user_input}{IUser\+Input}}}]{input}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Handles getting input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & \doxylink{interface_i_user_input}{IUser\+Input} to execute getting input with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String returned from getting input with \doxylink{interface_i_user_input}{IUser\+Input}. 
+\end{DoxyReturn}
+\Hypertarget{class_u_i_a10a9a945b16135e623b642d0112e498d}\index{UI@{UI}!Menu@{Menu}}
+\index{Menu@{Menu}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{Menu()}{Menu()}}
+{\footnotesize\ttfamily \label{class_u_i_a10a9a945b16135e623b642d0112e498d} 
+static string UI.\+Menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_i_user}{IUser}}}]{user}{, }\item[{string}]{input}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Menu functionality for the program. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \doxylink{interface_i_user}{IUser} to display the menu for. \\
+\hline
+{\em input} & String input to select a menu option. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String that was provided as input. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ATM/\+UI/UI.\+cs\end{DoxyCompactItemize}

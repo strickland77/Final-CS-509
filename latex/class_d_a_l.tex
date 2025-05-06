@@ -1,0 +1,72 @@
+\doxysection{DAL Class Reference}
+\hypertarget{class_d_a_l}{}\label{class_d_a_l}\index{DAL@{DAL}}
+
+
+\doxylink{class_d_a_l}{DAL} (Data Abstraction Layer) class to hand direct interaction with the database.  
+
+
+Inheritance diagram for DAL\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_d_a_l}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+My\+Sql.\+Data.\+My\+Sql\+Client.\+My\+Sql\+Connection \mbox{\hyperlink{class_d_a_l_a497e9f36c3acb2ac0228cc2f6cb62bf9}{Connect}} ()
+\begin{DoxyCompactList}\small\item\em Connects to the SQL database for the ATM. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_user}{User}} \mbox{\hyperlink{class_d_a_l_aa950fa619e8846a1a123ff40847ebd54}{Login}} (string login, int pin)
+\begin{DoxyCompactList}\small\item\em Logs in a user to the database. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_d_a_l}{DAL} (Data Abstraction Layer) class to hand direct interaction with the database. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_d_a_l_a497e9f36c3acb2ac0228cc2f6cb62bf9}\index{DAL@{DAL}!Connect@{Connect}}
+\index{Connect@{Connect}!DAL@{DAL}}
+\doxysubsubsection{\texorpdfstring{Connect()}{Connect()}}
+{\footnotesize\ttfamily \label{class_d_a_l_a497e9f36c3acb2ac0228cc2f6cb62bf9} 
+My\+Sql.\+Data.\+My\+Sql\+Client.\+My\+Sql\+Connection DAL.\+Connect (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Connects to the SQL database for the ATM. 
+
+\begin{DoxyReturn}{Returns}
+My\+Sql.\+Data.\+My\+Sql\+Client.\+My\+Sql\+Connection for the created connection or null if the connection failed. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_d_a_l_a791c296024243f448b2a47ab3cc5db9a}{IDAL}}.
+
+\Hypertarget{class_d_a_l_aa950fa619e8846a1a123ff40847ebd54}\index{DAL@{DAL}!Login@{Login}}
+\index{Login@{Login}!DAL@{DAL}}
+\doxysubsubsection{\texorpdfstring{Login()}{Login()}}
+{\footnotesize\ttfamily \label{class_d_a_l_aa950fa619e8846a1a123ff40847ebd54} 
+\mbox{\hyperlink{class_user}{User}} DAL.\+Login (\begin{DoxyParamCaption}\item[{string}]{login}{, }\item[{int}]{pin}{}\end{DoxyParamCaption})}
+
+
+
+Logs in a user to the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em login} & String login for the user attempting access. \\
+\hline
+{\em pin} & Int pin for the user attempting access. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_user}{User} if found or null if the login failed. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_d_a_l_aaab96661ec812604face68c4f4c7101c}{IDAL}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ATM/\+DAL/DAL.\+cs\end{DoxyCompactItemize}

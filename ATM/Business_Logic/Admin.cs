@@ -1,12 +1,29 @@
 using System.Data;
-namespace ATM;
+using System.Diagnostics.CodeAnalysis;
 
+/// <summary>
+/// Admin class inheriting from user with extra functionality.
+/// </summary>
 class Admin : User
 {
+    IDAL dal = new DAL();
+
     internal Admin(string input_login, int input_pin, string input_name, double input_balance, int input_account_number, string input_status) :
     base(input_login, input_pin, input_name, input_balance, input_account_number, input_status)
     { }
-    public override void DisplayMenu()
+
+    internal Admin(IUser user) : base(user) { }
+
+    /// <summary>
+    /// Displays the menu for an Admin and handles the user input to select an action.
+    /// </summary>
+    /// <param name="input">
+    /// String number to select an action from the menu.
+    /// </param>
+    /// <returns>
+    /// String that was input.
+    /// </returns>
+    override public string DisplayMenu(string input)
     {
         Console.WriteLine("1----Create New Account");
         Console.WriteLine("2----Delete Existing Account");
@@ -14,7 +31,12 @@ class Admin : User
         Console.WriteLine("4----Search for Account");
         Console.WriteLine("5----Exit");
 
-        var input = Console.ReadLine();
+        return HandleMenuInput(input);
+    }
+
+    [ExcludeFromCodeCoverage]
+    override protected string HandleMenuInput(string input)
+    {
         switch (input)
         {
             case "1":
@@ -36,8 +58,11 @@ class Admin : User
                 Console.WriteLine("Invalid input...");
                 break;
         }
+
+        return input;
     }
 
+    [ExcludeFromCodeCoverage]
     private void CreateAccount()
     {
         Console.Write("Input new account login: ");
@@ -57,7 +82,7 @@ class Admin : User
         }
         else
         {
-            var conn = DAL.Connect();
+            var conn = DBHandling.ConnectHandling(dal);
 
             var cmd = new MySql.Data.MySqlClient.MySqlCommand();
             cmd.Connection = conn;
@@ -83,6 +108,7 @@ class Admin : User
         }
     }
 
+    [ExcludeFromCodeCoverage]
     private void DeleteAccount()
     {
         Console.Write("Enter the account number to which you want to delete: ");
@@ -101,7 +127,7 @@ class Admin : User
 
             if (confirmed_account_number == input_account_number)
             {
-                var conn = DAL.Connect();
+                var conn = DBHandling.ConnectHandling(dal);
 
                 var cmd = new MySql.Data.MySqlClient.MySqlCommand();
                 cmd.Connection = conn;
@@ -120,6 +146,7 @@ class Admin : User
         }
     }
 
+    [ExcludeFromCodeCoverage]
     private void UpdateAccount()
     {
         Console.Write("Enter the account number to which you want to update: ");
@@ -143,7 +170,7 @@ class Admin : User
 
             var input = Console.ReadLine();
 
-            var conn = DAL.Connect();
+            var conn = DBHandling.ConnectHandling(dal);
 
             var cmd = new MySql.Data.MySqlClient.MySqlCommand();
             cmd.Connection = conn;
@@ -198,6 +225,7 @@ class Admin : User
         }
     }
 
+    [ExcludeFromCodeCoverage]
     private void SearchAccount()
     {
         Console.Write("Enter the account number to which you want to search: ");
@@ -219,14 +247,16 @@ class Admin : User
         }
     }
 
+    [ExcludeFromCodeCoverage]
     private User RetrieveAccountByLogin(string login, int pin)
     {
-        return DAL.Login(login, pin);
+        return DBHandling.LoginHandling(dal, login, pin);
     }
 
+    [ExcludeFromCodeCoverage]
     private User RetrieveAccountByNumber(int account_number)
     {
-        var conn = DAL.Connect();
+        var conn = DBHandling.ConnectHandling(dal);
 
         var cmd = new MySql.Data.MySqlClient.MySqlCommand();
         cmd.Connection = conn;
@@ -254,12 +284,6 @@ class Admin : User
                 Customer user = new Customer(db_login, db_pin, db_name, db_balance, db_account_number, db_status);
                 return user;
             }
-
-            Console.WriteLine(db_login);
-            Console.WriteLine(db_pin);
-            Console.WriteLine(db_name);
-            Console.WriteLine(db_balance);
-            Console.WriteLine(db_account_number);
         }
 
         Console.WriteLine("Found no account matching those credentials...");

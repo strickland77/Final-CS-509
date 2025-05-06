@@ -1,0 +1,219 @@
+\doxysection{User Class Reference}
+\hypertarget{class_user}{}\label{class_user}\index{User@{User}}
+
+
+\doxylink{class_user}{User} abstract class with core functionality for all users.  
+
+
+Inheritance diagram for User\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_user}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_user_af8ba25ce4099779b3faec51b926a0872}{Exit}} ()
+\begin{DoxyCompactList}\small\item\em Exits the application. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_user_a71006b6c22ad0678d3acc888225d587e}{Get\+Account\+Number}} ()
+\begin{DoxyCompactList}\small\item\em Gets the account number for this user. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_user_a91b9b6ed16d8d749b79db4a7014a0989}{Get\+Account\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Gets the account name for this user. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_user_aca60e3a8088164b144b0fba9f1b35c13}{Get\+Account\+Balance}} ()
+\begin{DoxyCompactList}\small\item\em Gets the account balance for this user. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_user_afe8d7eab695bef2b89435ebd43343321}{Get\+Account\+Status}} ()
+\begin{DoxyCompactList}\small\item\em Gets the account status for this user. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_user_a97504605454ddf0962b72b9a12da2639}{Get\+Account\+Login}} ()
+\begin{DoxyCompactList}\small\item\em Gets the account login for this user. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_user_a29e3b83031576ccccfbff563b6df35ac}{Get\+Account\+Pin}} ()
+\begin{DoxyCompactList}\small\item\em Gets the account pin for this user. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_user_a8575d33e8a462cf6fcd99a85b5a04bb7}{Set\+Account\+Balance}} (double input\+\_\+balance)
+\begin{DoxyCompactList}\small\item\em Sets the account balance for this user. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_user_ace9ea0e5af14e69dedcefcd5f7453f12}{Display\+Menu}} (string input)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_user_af6cce7551ecf98ff28f902ee9a894651}\label{class_user_af6cce7551ecf98ff28f902ee9a894651} 
+{\bfseries User} (string input\+\_\+login, int input\+\_\+pin, string input\+\_\+name, double input\+\_\+balance, int input\+\_\+account\+\_\+number, string input\+\_\+status)
+\item 
+\Hypertarget{class_user_a8bd174852128d7180554d4018849c5d7}\label{class_user_a8bd174852128d7180554d4018849c5d7} 
+{\bfseries User} (\mbox{\hyperlink{interface_i_user}{IUser}} user)
+\item 
+string \mbox{\hyperlink{class_user_aa03749ee4ad36ce53b0c5f806bb662a2}{Handle\+Menu\+Input}} (string input)
+\begin{DoxyCompactList}\small\item\em Displays the menu for a user and handles the user input to select an action. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_user}{User} abstract class with core functionality for all users. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_user_ace9ea0e5af14e69dedcefcd5f7453f12}\index{User@{User}!DisplayMenu@{DisplayMenu}}
+\index{DisplayMenu@{DisplayMenu}!User@{User}}
+\doxysubsubsection{\texorpdfstring{DisplayMenu()}{DisplayMenu()}}
+{\footnotesize\ttfamily \label{class_user_ace9ea0e5af14e69dedcefcd5f7453f12} 
+string User.\+Display\+Menu (\begin{DoxyParamCaption}\item[{string}]{input}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Implements \mbox{\hyperlink{interface_i_user}{IUser}}.
+
+\Hypertarget{class_user_af8ba25ce4099779b3faec51b926a0872}\index{User@{User}!Exit@{Exit}}
+\index{Exit@{Exit}!User@{User}}
+\doxysubsubsection{\texorpdfstring{Exit()}{Exit()}}
+{\footnotesize\ttfamily \label{class_user_af8ba25ce4099779b3faec51b926a0872} 
+void User.\+Exit (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Exits the application. 
+
+
+
+Implements \mbox{\hyperlink{interface_i_user}{IUser}}.
+
+\Hypertarget{class_user_aca60e3a8088164b144b0fba9f1b35c13}\index{User@{User}!GetAccountBalance@{GetAccountBalance}}
+\index{GetAccountBalance@{GetAccountBalance}!User@{User}}
+\doxysubsubsection{\texorpdfstring{GetAccountBalance()}{GetAccountBalance()}}
+{\footnotesize\ttfamily \label{class_user_aca60e3a8088164b144b0fba9f1b35c13} 
+double User.\+Get\+Account\+Balance (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Gets the account balance for this user. 
+
+\begin{DoxyReturn}{Returns}
+Double account balance. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_user}{IUser}}.
+
+\Hypertarget{class_user_a97504605454ddf0962b72b9a12da2639}\index{User@{User}!GetAccountLogin@{GetAccountLogin}}
+\index{GetAccountLogin@{GetAccountLogin}!User@{User}}
+\doxysubsubsection{\texorpdfstring{GetAccountLogin()}{GetAccountLogin()}}
+{\footnotesize\ttfamily \label{class_user_a97504605454ddf0962b72b9a12da2639} 
+string User.\+Get\+Account\+Login (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Gets the account login for this user. 
+
+\begin{DoxyReturn}{Returns}
+String account login. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_user}{IUser}}.
+
+\Hypertarget{class_user_a91b9b6ed16d8d749b79db4a7014a0989}\index{User@{User}!GetAccountName@{GetAccountName}}
+\index{GetAccountName@{GetAccountName}!User@{User}}
+\doxysubsubsection{\texorpdfstring{GetAccountName()}{GetAccountName()}}
+{\footnotesize\ttfamily \label{class_user_a91b9b6ed16d8d749b79db4a7014a0989} 
+string User.\+Get\+Account\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Gets the account name for this user. 
+
+\begin{DoxyReturn}{Returns}
+String account name. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_user}{IUser}}.
+
+\Hypertarget{class_user_a71006b6c22ad0678d3acc888225d587e}\index{User@{User}!GetAccountNumber@{GetAccountNumber}}
+\index{GetAccountNumber@{GetAccountNumber}!User@{User}}
+\doxysubsubsection{\texorpdfstring{GetAccountNumber()}{GetAccountNumber()}}
+{\footnotesize\ttfamily \label{class_user_a71006b6c22ad0678d3acc888225d587e} 
+int User.\+Get\+Account\+Number (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Gets the account number for this user. 
+
+\begin{DoxyReturn}{Returns}
+Int account number. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_user}{IUser}}.
+
+\Hypertarget{class_user_a29e3b83031576ccccfbff563b6df35ac}\index{User@{User}!GetAccountPin@{GetAccountPin}}
+\index{GetAccountPin@{GetAccountPin}!User@{User}}
+\doxysubsubsection{\texorpdfstring{GetAccountPin()}{GetAccountPin()}}
+{\footnotesize\ttfamily \label{class_user_a29e3b83031576ccccfbff563b6df35ac} 
+int User.\+Get\+Account\+Pin (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Gets the account pin for this user. 
+
+\begin{DoxyReturn}{Returns}
+Int account pin. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_user}{IUser}}.
+
+\Hypertarget{class_user_afe8d7eab695bef2b89435ebd43343321}\index{User@{User}!GetAccountStatus@{GetAccountStatus}}
+\index{GetAccountStatus@{GetAccountStatus}!User@{User}}
+\doxysubsubsection{\texorpdfstring{GetAccountStatus()}{GetAccountStatus()}}
+{\footnotesize\ttfamily \label{class_user_afe8d7eab695bef2b89435ebd43343321} 
+string User.\+Get\+Account\+Status (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Gets the account status for this user. 
+
+\begin{DoxyReturn}{Returns}
+String account status. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_user}{IUser}}.
+
+\Hypertarget{class_user_aa03749ee4ad36ce53b0c5f806bb662a2}\index{User@{User}!HandleMenuInput@{HandleMenuInput}}
+\index{HandleMenuInput@{HandleMenuInput}!User@{User}}
+\doxysubsubsection{\texorpdfstring{HandleMenuInput()}{HandleMenuInput()}}
+{\footnotesize\ttfamily \label{class_user_aa03749ee4ad36ce53b0c5f806bb662a2} 
+string User.\+Handle\+Menu\+Input (\begin{DoxyParamCaption}\item[{string}]{input}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+
+
+Displays the menu for a user and handles the user input to select an action. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & String number to select an action from the menu. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String that was input. 
+\end{DoxyReturn}
+\Hypertarget{class_user_a8575d33e8a462cf6fcd99a85b5a04bb7}\index{User@{User}!SetAccountBalance@{SetAccountBalance}}
+\index{SetAccountBalance@{SetAccountBalance}!User@{User}}
+\doxysubsubsection{\texorpdfstring{SetAccountBalance()}{SetAccountBalance()}}
+{\footnotesize\ttfamily \label{class_user_a8575d33e8a462cf6fcd99a85b5a04bb7} 
+void User.\+Set\+Account\+Balance (\begin{DoxyParamCaption}\item[{double}]{input\+\_\+balance}{}\end{DoxyParamCaption})}
+
+
+
+Sets the account balance for this user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+\_\+balance} & Double to set the balance to. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_i_user}{IUser}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ATM/\+Business\+\_\+\+Logic/User.\+cs\end{DoxyCompactItemize}

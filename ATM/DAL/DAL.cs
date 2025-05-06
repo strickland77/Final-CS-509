@@ -1,9 +1,19 @@
 using System.Data;
-namespace ATM;
+using System.Diagnostics.CodeAnalysis;
+using System.Runtime.InteropServices;
 
-class DAL
+/// <summary>
+/// DAL (Data Abstraction Layer) class to hand direct interaction with the database.
+/// </summary>
+class DAL : IDAL
 {
-    internal static MySql.Data.MySqlClient.MySqlConnection Connect()
+    /// <summary>
+    /// Connects to the SQL database for the ATM.
+    /// </summary>
+    /// <returns>
+    /// MySql.Data.MySqlClient.MySqlConnection for the created connection or null if the connection failed.
+    /// </returns>
+    public MySql.Data.MySqlClient.MySqlConnection Connect()
     {
         MySql.Data.MySqlClient.MySqlConnection conn;
         string myConnectionString;
@@ -12,15 +22,51 @@ class DAL
 
         conn = new MySql.Data.MySqlClient.MySqlConnection();
         conn.ConnectionString = myConnectionString;
+
+        try
+        {
+            conn.Open();
+        }
+        catch
+        {
+            Console.WriteLine("Unable to connect to database...");
+            return null;
+        }
         conn.Open();
 
         return conn;
     }
 
-    internal static User Login(string login, int pin)
+    /// <summary>
+    /// Logs in a user to the database.
+    /// </summary>
+    /// <param name="login">
+    /// String login for the user attempting access.
+    /// </param>
+    /// <param name="pin">
+    /// Int pin for the user attempting access.
+    /// </param>
+    /// <returns>
+    /// User if found or null if the login failed.
+    /// </returns>
+    public User Login(string login, int pin)
     {
         var conn = Connect();
 
+        if (conn == null)
+        {
+            Console.WriteLine("Login failed...");
+            return null;
+        }
+        else
+        {
+            return LoadUser(conn, login, pin);
+        }
+    }
+
+    [ExcludeFromCodeCoverage]
+    private User LoadUser(MySql.Data.MySqlClient.MySqlConnection conn, string login, int pin)
+    {
         var cmd = new MySql.Data.MySqlClient.MySqlCommand();
         cmd.Connection = conn;
         cmd.CommandType = CommandType.Text;
