@@ -10,7 +10,7 @@ class Program
     {
         Console.WriteLine("Welcome to the ATM");
         int pin;
-        User user = null;
+        IUser user = null;
         while (user == null)
         {
             Console.Write("Input login: ");
